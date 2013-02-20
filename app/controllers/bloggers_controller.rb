@@ -1,13 +1,6 @@
 class BloggersController < ApplicationController
   # GET /bloggers
   # GET /bloggers.json
-  
-  
-  
-  
-  def home
-  end
-  
   end
   def index
     @bloggers = Blogger.all
