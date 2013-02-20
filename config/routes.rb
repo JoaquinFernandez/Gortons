@@ -1,12 +1,4 @@
 Sadsad::Application.routes.draw do
-  resources :recipes
-
-  resources :voters
-
-  resources :users
-
-  resources :bloggers
-
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
