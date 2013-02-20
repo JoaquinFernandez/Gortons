@@ -2,7 +2,7 @@
 
 #page-wrapper{
 	width:960px;
-	margin: 0 auto;;
+	margin: 0 auto;
 }
 
 
@@ -45,8 +45,51 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefcea', end
       #nav li  #2{
        padding-right: 50px;
       }
-   #nav li a:hover {
-     }
+ 
    /* End navigation bar styling. */
   
+  #footer-nav #footer-nav-list{
+    list-style:none;
+  }
+
+#footer-nav #footer-nav-list li{
+float:left;
+display:inline;
+}
+
+
+
+
+
+
+#footer-nav #footer-nav-list li a{
+text-decoration:none;
+width:100px;
+color:#000;
+float:left;
+text-align:center;
+border-left: 1px solid #fff;
+font-size:11px;
+}
+
+#footer-nav #footer-nav-list li a:hover{
+  
+  
+  color:#000;
+  background-color:yellow; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
