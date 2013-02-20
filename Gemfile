@@ -6,7 +6,12 @@ gem 'rails', '3.2.6'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 group :development do
+  gem 'annotate'
+end
+
+group :development, :test do
   gem 'sqlite3', '1.3.5'
+  gem 'rspec-rails', '2.11.0'
 end
 
 gem 'rake' , '0.8.7'
@@ -22,7 +27,6 @@ end
 gem 'jquery-rails', '2.0.2'
 
 gem "paperclip", "~> 3.4.0"
-
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

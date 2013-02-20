@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  email: MyString
+  votedEver: false
+  votedToday: false
+
+two:
+  email: MyString
+  votedEver: false
+  votedToday: false
