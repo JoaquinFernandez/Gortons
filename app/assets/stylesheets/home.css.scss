@@ -1,16 +1,35 @@
+
+
+#page-wrapper{
+	width:960px;
+	margin: 0 auto;;
+}
+
+#nav {
+	width: 100%;
+	 }
+
+
 ul#main-nav {
-  list-style:none;
-  margin:20px;
+  list-style-type:none;
+  margin:0px;
+  display:inline-block;
   padding:0;
-  width:980px
+   
 }
 
 ul#main-nav li {
-  display:inline
+	float:left;
+	width: 480px;
+ 
 
 }
 
 ul#main-nav li a {
+	display: block;
+	text-decoration: none;
+	font-size: 11px;
+	
  
 }
 
