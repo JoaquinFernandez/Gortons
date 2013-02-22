@@ -41,28 +41,22 @@
    
    #header-nav #header-nav-list li a {
     display: block;
-
     text-decoration: none;
-  
-  margin-top:10px;
-    
-    
-    color:#000;
+    margin-top:10px;
+     border-left:1px solid #000; 
+    color:rgb(0,110,182);
+    font-weight:bold;
     text-align:center;
+    padding-left:5px;
+    padding-right:5px;
     
       }
        #header-nav #header-nav-list li #first{
              
-     padding-right:5px;
+    border-left:none;
               
             }
-            #header-nav #header-nav-list li #second{
-              
-              padding-left:5px;
-                  border-left:1px solid #000;  
-             
-              
-            }
+       
             #header-nav #header-nav-list li a:hover{
   
   
@@ -75,13 +69,32 @@
  
    /* End navigation bar styling. */
   
+  
+  
+  #footer-nav{
+    
+   
+    text-decoration:none;
+    text-align: center;
+    
+    
+  }
   #footer-nav #footer-nav-list{
     list-style:none;
+display:inline-block;
+margin:0;
+padding:0;
   }
 
 #footer-nav #footer-nav-list li{
 float:left;
-display:inline;
+
+}
+#footer-nav #footer-nav-list li #firstchild{
+  
+  border-left:none;
+  
+  
 }
 
 
@@ -90,12 +103,14 @@ display:inline;
 
 
 #footer-nav #footer-nav-list li a{
+  display:block;
 text-decoration:none;
-width:100px;
+padding-left:5px;
+padding-right:5px;
 color:#000;
-float:left;
-text-align:center;
-border-left: 1px solid #fff;
+
+
+border-left: 1px solid #000;
 font-size:11px;
 }
 
