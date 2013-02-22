@@ -3,7 +3,7 @@
 #page-wrapper{
 	width:960px;
 	margin: 0 auto;
-	    background-color:rgb(246,241,149);
+ background-color:rgb(246,241,149);
   
 	
 	
@@ -11,38 +11,66 @@
 }
 
 
-#page-header{
-      background-color:rgb(254,237,47); 
-      height:40px;  
-}
 
 #header-nav {
-  
+    background-color:rgb(254,237,47); 
+      height:40px;
+      text-align:center;
+     
+      text-decoration:none;
  
       }  
    #header-nav #header-nav-list {
    
-    list-style:none;
+    list-style-type:none;
+    display:inline-block;
+    margin:0;
+    padding:0;
+  
+     
     
       }
       #header-nav #header-nav-list li{
-        float:left;
-        display:inline;
         
+        float:left;
+       
+           
+  
       }
    
    
    #header-nav #header-nav-list li a {
-    
+    display: block;
+
     text-decoration: none;
+  
+  margin-top:10px;
     
     
-    width:200px;
     color:#000;
-    float:left;
     text-align:center;
     
       }
+       #header-nav #header-nav-list li #first{
+             
+     padding-right:5px;
+              
+            }
+            #header-nav #header-nav-list li #second{
+              
+              padding-left:5px;
+                  border-left:1px solid #000;  
+             
+              
+            }
+            #header-nav #header-nav-list li a:hover{
+  
+  
+  color:#000;
+  background-color:rgb(254,237,47); 
+}
+
+
 
  
    /* End navigation bar styling. */
