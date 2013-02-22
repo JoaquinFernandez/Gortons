@@ -3,42 +3,57 @@
 #header-wrapper{
       width:960px;
       margin: 0 auto;
-      background-color:rgb(246,241,149);
+      background-color:rgb(253,250,218);
       height:100px;  
 }
 #header{
-      background-color:rgb(254,237,47); 
       height:40px;  
 }
 
 #header-nav {
-      }  
+    height:40px;
+    text-align:center;
+    text-decoration:none;
+}  
     #header-nav #header-nav-list {
-        list-style:none;
+        list-style-type:none; 
+        margin:0;
+        padding:0;
     }
     #header-nav #header-nav-list li{
         float:left;
-        display:inline;
     }
+        #header-nav #header-nav-list li #first{
+            padding-right:5px;
+        }
+        #header-nav #header-nav-list li #second{
+            padding-left:5px;
+            border-left:1px solid #000;  
+        }
     #header-nav #header-nav-list li a {
         text-decoration: none;
-        width:200px;
+        margin-top:10px;
         color:#000;
-        float:left;
         text-align:center;
     }
+        #header-nav #header-nav-list li a:hover{
+            color:#000;
+        }
+    
+            
+    
     
 #body-wrapper{
       width:960px;
       margin: auto;
-      background-color:rgb(246,241,149);
+      background-color:rgb(254,237,47);
 }
 
    /* End navigation bar styling. */
 #footer-nav {
+        display:inline-block;
       }    
     #footer-nav #footer-nav-list{
-        list-style:none;
     }
 
     #footer-nav #footer-nav-list li{
@@ -46,19 +61,16 @@
         display:inline;
     }
     #footer-nav #footer-nav-list li a{
-        text-decoration:none;
         width:100px;
         float:left;
         text-align:center;
         border-left: 1px solid #fff;
         font-size:11px;
     }
-
-    #footer-nav #footer-nav-list li a:hover{
-    }
 #mycarousel{
-    background-color:rgb(254,237,47);
+    background-color:rgb(0,237,47);
     margin: 40px;
+    display:inline-block;
 }
       .carousel-component {
         padding: 8px 16px 4px 16px;
