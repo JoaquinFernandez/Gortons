@@ -1,4 +1,15 @@
 class RecipesController < ApplicationController
+  
+  # GET /vote
+  # GET /vote.json
+  def vote
+
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render json: @recipes }
+    end
+  end
+  
   # GET /recipes
   # GET /recipes.json
   def index
