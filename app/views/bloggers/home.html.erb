@@ -1,88 +1,24 @@
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
-	<script src="yahoo.js"></script>
-	<script src="event.js"></script>
-	<script src="container_core.js"></script>
-	<script src="dom.js"></script>
-	<script src="animation.js"></script>
-
-	<!-- Source file -->
-	<script src="carousel.js"></script>
-
 	<head>
 		<title>Header</title>
 		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<%= javascript_include_tag "jquery-1.2.1.pack" %>
+		<%= javascript_include_tag "jMyCarousel" %>
+		<!-- Optional -->
+		<%= javascript_include_tag "jquery.mousewheel" %>
+		<script type="text/javascript">
+			$(function() {
+				$(".jMyCarousel").jMyCarousel({
+					visible : '100%'
+				});
+			});
+		</script>
 	
 	</head>
 
 	<body >
-		<script type="text/javascript">
-			var Carousel = function(carouselElementID, carouselCfg) {
-				this.init(carouselElementID, carouselCfg);
-			};
-
-			Carousel.prototype = {
-				init : function(id, cfg) {
-					var config = {
-						numVisible : 4,
-						animationSpeed : 0.15,
-						scrollInc : 1,
-						navMargin : 20,
-						size : 8,
-						prevButtonStateHandler : this.handlePrevButtonState,
-						nextButtonStateHandler : this.handleNextButtonState
-					};
-
-					for (var key in cfg) {
-						if (!cfg.hasOwnProperty(key)) {
-							continue;
-						}
-						config[key] = cfg[key];
-					}
-
-					this.carousel = new YAHOO.extension.Carousel(id, config);
-
-				},
-				handlePrevButtonState : function(type, args) {
-					var enabling = args[0];
-					var leftImage = args[1];
-					if (enabling) {
-						leftImage.src = "images/left-enabled.gif";
-					} else {
-						leftImage.src = "images/left-disabled.gif";
-					}
-				},
-
-				handleNextButtonState : function(type, args) {
-					var enabling = args[0];
-					var rightImage = args[1];
-
-					if (enabling) {
-						rightImage.src = "images/right-enabled.gif";
-					} else {
-						rightImage.src = "images/right-disabled.gif";
-					}
-				}
-			};
-
-			/**
-			 * You must create the carousel after the page is loaded since it is
-			 * dependent on an HTML element (in this case 'mycarousel'.) See the
-			 * HTML code below.
-			 **/
-			var carousel
-
-			var pageLoad = function() {
-				carousel = new Carousel("mycarousel", {
-					prevElement : "prev-arrow",
-					nextElement : "next-arrow"
-				});
-			};
-
-			YAHOO.util.Event.addListener(window, 'load', pageLoad);
-
-		</script>
 		<div id="page-wrapper">
 			
 
@@ -106,29 +42,21 @@
 			<%= image_tag 'Header.jpg', :style => "width: 960px; height: 270px;padding-bottom:-200px;float:left"%>
 
 			<!-- Carousel Structure -->
-			<div id="blogger-carousel" class="carousel-component">
-				<div class="carousel-prev">
-					<%= image_tag 'Navigation-Left.png', :alt => "Previous Button", :id => "prev-arrow", :class => "left-button-image"%>
-				</div>
-				<div class="carousel-next">
-					<%= image_tag 'Navigation-Right.png', :alt => "Next Button", :id => "next-arrow", :class => "right-button-image" %>
-				</div>
-				<div class="carousel-clip-region">
-					<ul class="carousel-list">
-						<li id="mycarousel-item-1">
-							<a href="#"><img width="75" height="75" src="http://static.flickr.com/74/162582364_7fc3e2d60d_s.jpg" alt="item 1"/></a>
-							<ul id="description">
-								
-								<li id="Name">Name</li>
-								<li id="Recipe">Recipe</li>
-								
-								
-							</ul>
-						</li>
-						
-					</ul>
-				</div>
+			<div class="jMyCarousel">
+				<ul>
+					<li><%= image_tag '1.jpg', :alt => "1.jpg", :id => "1.jpg" %>
+					</li>
+					<li><%= image_tag '6.jpg', :alt => "6.jpg", :id => "6.jpg" %>
+					</li>
+					<li><%= image_tag '3.jpg', :alt => "3.jpg", :id => "3.jpg" %>
+					</li>
+					<li><%= image_tag '4.jpg', :alt => "4.jpg", :id => "4.jpg" %>
+					</li>
+					<li><%= image_tag '5.jpg', :alt => "5.jpg", :id => "5.jpg" %>
+					</li>
+				</ul>
 			</div>
+
 			
 			
 				<%=image_tag 'Bottom-Image.jpg', :style => "width: 900px; height: 200px;padding-left:30px"%>
