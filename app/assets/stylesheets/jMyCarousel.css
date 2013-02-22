@@ -38,6 +38,7 @@ div.jMyCarousel .down{
 
 div.jMyCarousel{
 	border:1px solid #1c6f8e;
+	display:inline-block;
 }
 
 div.jMyCarousel ul{

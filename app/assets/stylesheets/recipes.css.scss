@@ -1,56 +1,56 @@
-#header-recipes{
-      width: auto;
-      margin: 40px;
-      background-color:rgb(246,241,149);
+#header-recipes-gradient{
+      width: inherit;
+      height:40px;
+      background: #d1cb81; /* Old browsers */
+background: -moz-linear-gradient(top,  #d1cb81 1%, #f6f195 12%, #f6f195 71%, #f6f195 74%, #b2ad6c 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#d1cb81), color-stop(12%,#f6f195), color-stop(71%,#f6f195), color-stop(74%,#f6f195), color-stop(100%,#b2ad6c)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #d1cb81 1%,#f6f195 12%,#f6f195 71%,#f6f195 74%,#b2ad6c 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #d1cb81 1%,#f6f195 12%,#f6f195 71%,#f6f195 74%,#b2ad6c 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #d1cb81 1%,#f6f195 12%,#f6f195 71%,#f6f195 74%,#b2ad6c 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #d1cb81 1%,#f6f195 12%,#f6f195 71%,#f6f195 74%,#b2ad6c 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d1cb81', endColorstr='#b2ad6c',GradientType=0 ); /* IE6-9 */
+
+
 }
 
 #body-recipes-wrapper{
-      width:960px;
-      margin: auto;
+      width:auto;
       background-color:rgb(254,237,47);
+      display:block;
+      padding-left:60px;
+      padding-right:60px;
+      padding-top:60px;
+      padding-bottom:20px;
 }
 
-      .carousel-component {
-        padding: 8px 16px 4px 16px;
-        margin-top: 20px;
-        width: 80px;
-      }
+#body-recipes-gradient{
+background: #d1cb81; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  #d1cb81 1%, #f6f195 12%, #f6f195 71%, #f6f195 74%, #b2ad6c 100%); /* FF3.6+ */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(1%,#d1cb81), color-stop(12%,#f6f195), color-stop(71%,#f6f195), color-stop(74%,#f6f195), color-stop(100%,#b2ad6c)); /* Chrome,Safari4+ */
+background: -webkit-radial-gradient(center, ellipse cover,  #d1cb81 1%,#f6f195 12%,#f6f195 71%,#f6f195 74%,#b2ad6c 100%); /* Chrome10+,Safari5.1+ */
+background: -o-radial-gradient(center, ellipse cover,  #d1cb81 1%,#f6f195 12%,#f6f195 71%,#f6f195 74%,#b2ad6c 100%); /* Opera 12+ */
+background: -ms-radial-gradient(center, ellipse cover,  #d1cb81 1%,#f6f195 12%,#f6f195 71%,#f6f195 74%,#b2ad6c 100%); /* IE10+ */
+background: radial-gradient(ellipse at center,  #d1cb81 1%,#f6f195 12%,#f6f195 71%,#f6f195 74%,#b2ad6c 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d1cb81', endColorstr='#b2ad6c',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 
-      .carousel-component .carousel-list li {
-        margin: 4px;
-        width: 79px; /* img width is 75 px from flickr + a.border-left (1) + a.border-right(1) +
-         img.border-left (1) + img.border-right (1)*/
-        height: 93px; /* image + row of text (87) + border-top (1) + border-bottom(1) + margin-bottom(4) */
-        /*  margin-left: auto;*/ /* for testing IE auto issue */
-      }
+}
+#body-recipes-carousel{
+  width:auto;
+  padding:5px
+}
 
-      .carousel-component .carousel-list li a {
-        display: block;
-        border: 1px solid #e2edfa;
-        outline: none;
-      }
+#wrapper-logo-recipe{
+      position:relative;
+}
 
-      .carousel-component .carousel-list li a:hover {
-        border: 1px solid #aaaaaa;
-      }
-
-      .carousel-component .carousel-list li img {
-        border: 1px solid #999;
-        display: block;
-      }
-
-      .carousel-component .carousel-prev {
-        position: absolute;
-        top: 40px;
-        z-index: 3;
-        cursor: pointer;
-        left: 5px;
-      }
-
-      .carousel-component .carousel-next {
-        position: absolute;
-        top: 40px;
-        z-index: 3;
-        cursor: pointer;
-        right: 5px;
-      }
+#image-logo-recipe{
+      position:absolute;
+      top:5px;
+      left:90px;
+}
+#page-wrapper-recipes{
+  width:960px;
+  margin: 0 auto;
+ background-color:rgb(246,241,149);
+  
+}

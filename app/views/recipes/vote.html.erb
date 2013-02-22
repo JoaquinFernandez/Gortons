@@ -14,10 +14,8 @@
 			});
 		</script>
 	</head>
-
 	<body >
-		<div id="page-wrapper">
-
+		<div id="page-wrapper-recipes">
 			<nav id="header-nav" >
 				<ul id="header-nav-list">
 
@@ -33,45 +31,56 @@
 
 				</ul>
 			</nav>
-
-			/**
-			* anadir aqui el header propio
-			*/
-		</div>
-		<div id="body-recipes-wrapper">
-			<div class="jMyCarousel">
-				<ul>
-					<li><%= image_tag '1.jpg', :alt => "1.jpg", :id => "1.jpg" %>
-					</li>
-					<li><%= image_tag '6.jpg', :alt => "6.jpg", :id => "6.jpg" %>
-					</li>
-					<li><%= image_tag '3.jpg', :alt => "3.jpg", :id => "3.jpg" %>
-					</li>
-					<li><%= image_tag '4.jpg', :alt => "4.jpg", :id => "4.jpg" %>
-					</li>
-					<li><%= image_tag '5.jpg', :alt => "5.jpg", :id => "5.jpg" %>
-					</li>
-				</ul>
+			<div id="wrapper-logo-recipe">
+				<div id="image-logo-recipe">
+					<%= image_tag 'Logo.png', :alt => "Logo", :id => "vote_logo" %>
+				</div>
 			</div>
+			<div id="header-recipes-gradient"></div>
+			<div id="body-recipes-wrapper">
+				<div id="body-recipes-gradient">
+					<div id="body-recipes-carousel">
+						<div class="jMyCarousel">
+							<ul>
+								<li>
+									<%= image_tag '1.jpg', :alt => "1.jpg", :id =>
+									"1.jpg" %>
+								</li>
+								<li>
+									<%= image_tag '6.jpg', :alt => "6.jpg", :id => "6.jpg" %>
+								</li>
+								<li>
+									<%= image_tag '3.jpg', :alt => "3.jpg", :id => "3.jpg" %>
+								</li>
+								<li>
+									<%= image_tag '4.jpg', :alt => "4.jpg", :id => "4.jpg" %>
+								</li>
+								<li>
+									<%= image_tag '5.jpg', :alt => "5.jpg", :id => "5.jpg" %>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
 
-			<footer id="page-footer">
-				<nav id="footer-nav">
-					<ul id="footer-nav-list">
-						<li>
-							<a id="firstchild" href="OfficialRules.html" title="Official Rules">Official Rules</a
-						</li>
-						<li>
-							<a href="http://gortons.com/privacy_policy.htm" title="Privacy Policy">Privacy Policy</a
-						</li>
+				<footer id="page-footer">
+					<nav id="footer-nav">
+						<ul id="footer-nav-list">
+							<li>
+								<a id="firstchild" href="OfficialRules.html" title="Official Rules">Official Rules</a
+							</li>
+							<li>
+								<a href="http://gortons.com/privacy_policy.htm" title="Privacy Policy">Privacy Policy</a
+							</li>
 
-						<li>
-							<a href="ContactUs.html" title="Contact Us">Contact Us</a
-						</li>
+							<li>
+								<a href="ContactUs.html" title="Contact Us">Contact Us</a
+							</li>
 
-					</ul>
-				</nav>
-			</footer>
-
+						</ul>
+					</nav>
+				</footer>
+			</div>
 		</div>
 	</body>
 </html>
