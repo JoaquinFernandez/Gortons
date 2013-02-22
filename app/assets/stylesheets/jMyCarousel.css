@@ -8,14 +8,14 @@
 
 
 div.jMyCarousel .prev{
-	background: url('left.png') center center no-repeat;
+	background: url('Navigation-Left.png') center center no-repeat;
 	width:47px;
 	height:61px;
 	border:0px;
 }
 
 div.jMyCarousel .next{
-	background: url('right.png') center center no-repeat;
+	background: url('Navigation-Right.png') center center no-repeat;
 	width:40px;
 	height:61px;
 	border:0px;
