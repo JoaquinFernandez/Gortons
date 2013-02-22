@@ -128,10 +128,9 @@
 
 		</script>
 		<div id="page-wrapper">
-			
-<header id="page-header">
-			<nav id="header-nav" >
-				<ul id="header-nav-list">
+
+			<div id="main-nav" >
+				<ul id="nav">
 
 					<li>
 						<a href="http://gortonsenespanol.com/productos"> GORTON'S PRODUCTS</a>
@@ -139,15 +138,14 @@
 					</li>
 
 					<li>
-						<a  href="http://gortonsenespanol.com/"> GORTONSENESPANOL.COM</a>
+						<a id="2" href="http://gortonsenespanol.com/"> GORTONSENESPANOL.COM</a>
 
 					</li>
 
 				</ul>
-			</nav>
-			</header>
+			</div>
 
-			<%= image_tag 'Header.jpg', :style => "width: 960px; height: 270px;padding-bottom:-200px;float:left"%>
+			<%= image_tag 'Header.jpg', :style => "width: 960px; height: 200px"%>
 
 			<!-- Carousel Structure -->
 			<div id="mycarousel" class="carousel-component">
@@ -190,12 +188,12 @@
 			</div>
 			
 			
-				<%=image_tag 'Bottom-Image.jpg', :style => "width: 900px; height: 200px;padding-left:30px"%>
+				<%=image_tag 'Bottom-Image.jpg', :style => "width: 960px; height: 200px"%>
 		
 <footer id="page-footer">
 	<nav id="footer-nav">
 		<ul id="footer-nav-list">
-			<li><%= link_to "Official Rules", {:controller => "bloggers", :action => "rules"}  %>
+			<li><a href="OfficialRules.html" title="Official Rules">Official Rules</a</li>
 				<li><a href="http://gortons.com/privacy_policy.htm" title="Privacy Policy">Privacy Policy</a</li>
 			
 			<li><a href="ContactUs.html" title="Contact Us">Contact Us</a</li>
