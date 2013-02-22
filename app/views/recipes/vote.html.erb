@@ -1,146 +1,66 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
-	<script src="yahoo.js"></script>
-	<script src="event.js"></script>
-	<script src="container_core.js"></script>
-	<script src="dom.js"></script>
-	<script src="animation.js"></script>
-
-	<!-- Source file -->
-	<script src="carousel.js"></script>
-
+<!-- Carousel Structure -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 	<head>
-		 <LINK href="recipes.css.css" rel="stylesheet" type="text/css">
-		<title>Header</title>
-		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<%= javascript_include_tag "jquery-1.2.1.pack" %>
+		<%= javascript_include_tag "jMyCarousel" %>
+		<!-- Optional -->
+		<%= javascript_include_tag "jquery.mousewheel" %>
+		<script type="text/javascript">
+			$(function() {
+				$(".jMyCarousel").jMyCarousel({
+					visible : '100%'
+				});
+			});
+		</script>
 	</head>
 
 	<body >
-		<script type="text/javascript">
-			var Carousel = function(carouselElementID, carouselCfg) {
-				this.init(carouselElementID, carouselCfg);
-			};
+		<div id="page-wrapper">
 
-			Carousel.prototype = {
-				init : function(id, cfg) {
-					var config = {
-						numVisible : 4,
-						animationSpeed : 0.15,
-						scrollInc : 1,
-						navMargin : 20,
-						size : 8,
-						prevButtonStateHandler : this.handlePrevButtonState,
-						nextButtonStateHandler : this.handleNextButtonState
-					};
+			<nav id="header-nav" >
+				<ul id="header-nav-list">
 
-					for (var key in cfg) {
-						if (!cfg.hasOwnProperty(key)) {
-							continue;
-						}
-						config[key] = cfg[key];
-					}
+					<li>
+						<a id="first" href="http://gortonsenespanol.com/productos"> GORTON'S PRODUCTS</a>
 
-					this.carousel = new YAHOO.extension.Carousel(id, config);
+					</li>
 
-				},
-				handlePrevButtonState : function(type, args) {
-					var enabling = args[0];
-					var leftImage = args[1];
-					if (enabling) {
-						leftImage.src = "images/left-enabled.gif";
-					} else {
-						leftImage.src = "images/left-disabled.gif";
-					}
-				},
+					<li>
+						<a  href="http://gortonsenespanol.com/"> GORTONSENESPANOL.COM</a>
 
-				handleNextButtonState : function(type, args) {
-					var enabling = args[0];
-					var rightImage = args[1];
+					</li>
 
-					if (enabling) {
-						rightImage.src = "images/right-enabled.gif";
-					} else {
-						rightImage.src = "images/right-disabled.gif";
-					}
-				}
-			};
+				</ul>
+			</nav>
 
 			/**
-			 * You must create the carousel after the page is loaded since it is
-			 * dependent on an HTML element (in this case 'mycarousel'.) See the
-			 * HTML code below.
-			 **/
-			var carousel
-
-			var pageLoad = function() {
-				carousel = new Carousel("mycarousel", {
-					prevElement : "prev-arrow",
-					nextElement : "next-arrow"
-				});
-			};
-
-			YAHOO.util.Event.addListener(window, 'load', pageLoad);
-
-		</script>
-		<div id="header-wrapper">
-			<header id="header">
-				<nav id="header-nav" >
-					<ul id="header-nav-list">
-						<li>
-							<a href="http://gortonsenespanol.com/productos"> GORTON'S PRODUCTS</a>
-						</li>
-						<li>
-							<a id="" href="http://gortonsenespanol.com/"> GORTONSENESPANOL.COM</a>
-						</li>
-					</ul>
-				</nav>
-			</header>
+			* anadir aqui el header propio
+			*/
 		</div>
-		<div id ="body-recipes-wrapper">
-			<!-- Carousel Structure -->
-			<div id="mycarousel-recipes" class="carousel-recipes-component">
-				<div class="carousel-recipes-prev">
-					<%= image_tag 'Navigation-Left.png', :alt => "Previous Button", :id => "prev-arrow", :class => "left-button-image"%>
-				</div>
-				<div class="carousel-recipes-next">
-					<%= image_tag 'Navigation-Right.png', :alt => "Next Button", :id => "next-arrow", :class => "right-button-image" %>
-				</div>
-				<div class="carousel-recipes-clip-region">
-					<ul class="carousel-recipes-list">
-						<li id="mycarousel-recipes-item-1">
-							<a href="#"><img width="75" height="75" src="http://static.flickr.com/74/162582364_7fc3e2d60d_s.jpg" alt="item 1"/></a>Number One
-						</li>
-						<li id="mycarousel-recipes-item-2">
-							<div>
-								<a href="#"><img width="75" height="75" src="http://static.flickr.com/67/162582262_e969394bc3_s.jpg" alt="item 2"/></a>Number Two
-							</div>
-						</li>
-						<li id="mycarousel-recipes-item-3">
-							<a href="#"><img width="75" height="75" src="http://static.flickr.com/49/162582189_e0571b02e2_s.jpg" alt="item 3"/></a>Number Three
-						</li>
-						<li id="mycarousel-recipes-item-4">
-							<a href="#"><img width="75" height="75" src="http://static.flickr.com/53/162581581_de49021696_s.jpg" alt="item 4"/></a>Number Four
-						</li>
-						<li id="mycarousel-recipes-item-5">
-							<a href="#"><img width="75" height="75" src="http://static.flickr.com/74/161894590_9a1a9788e1_s.jpg" alt="item 5"/></a>Number Five
-						</li>
-						<li id="mycarousel-recipes-item-6">
-							<a href="#"><img width="75" height="75" src="http://static.flickr.com/55/161894230_a4f1baf3d2_s.jpg" alt="item 6"/></a>Number Six
-						</li>
-						<li id="mycarousel-recipes-item-7">
-							<a href="#"><img width="75" height="75" src="http://static.flickr.com/52/161894040_04f135f1a2_s.jpg" alt="item 7"/></a>Number Seven
-						</li>
-						<li id="mycarousel-recipes-item-8">
-							<a href="#"><img width="75" height="75" src="http://static.flickr.com/54/161893927_c173a1e28c_s.jpg" alt="item 8"/></a>Number Eight
-						</li>
-					</ul>
-				</div>
+		<div id="body-recipes-wrapper">
+			<br/>
+			<br/>
+			<div class="jMyCarousel">
+				<ul>
+					<li><%= image_tag '1.jpg', :alt => "1.jpg", :id => "1.jpg" %>
+					</li>
+					<li><%= image_tag '6.jpg', :alt => "6.jpg", :id => "6.jpg" %>
+					</li>
+					<li><%= image_tag '3.jpg', :alt => "3.jpg", :id => "3.jpg" %>
+					</li>
+					<li><%= image_tag '4.jpg', :alt => "4.jpg", :id => "4.jpg" %>
+					</li>
+					<li><%= image_tag '5.jpg', :alt => "5.jpg", :id => "5.jpg" %>
+					</li>
+				</ul>
 			</div>
+
 			<footer id="page-footer">
 				<nav id="footer-nav">
 					<ul id="footer-nav-list">
 						<li>
-							<a href="OfficialRules.html" title="Official Rules">Official Rules</a
+							<a id="firstchild" href="OfficialRules.html" title="Official Rules">Official Rules</a
 						</li>
 						<li>
 							<a href="http://gortons.com/privacy_policy.htm" title="Privacy Policy">Privacy Policy</a
@@ -149,9 +69,11 @@
 						<li>
 							<a href="ContactUs.html" title="Contact Us">Contact Us</a
 						</li>
+
 					</ul>
 				</nav>
 			</footer>
+
 		</div>
 	</body>
 </html>

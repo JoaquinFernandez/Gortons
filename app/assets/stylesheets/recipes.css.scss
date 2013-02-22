@@ -1,18 +1,22 @@
+#header-recipes{
+      width: auto;
+      margin: 40px;
+      background-color:rgb(246,241,149);
+}
+
 #body-recipes-wrapper{
       width:960px;
       margin: auto;
       background-color:rgb(254,237,47);
 }
 
-#mycarousel-recipes{
-    background-color:rgb(0,237,47);
-    margin: 40px;
-    display:inline-block;
-}
-      .carousel-recipes-component {
+      .carousel-component {
         padding: 8px 16px 4px 16px;
+        margin-top: 20px;
+        width: 80px;
       }
-      .carousel-recipes-component .carousel-recipes-list li {
+
+      .carousel-component .carousel-list li {
         margin: 4px;
         width: 79px; /* img width is 75 px from flickr + a.border-left (1) + a.border-right(1) +
          img.border-left (1) + img.border-right (1)*/
@@ -20,22 +24,22 @@
         /*  margin-left: auto;*/ /* for testing IE auto issue */
       }
 
-      .carousel-recipes-component .carousel-recipes-list li a {
+      .carousel-component .carousel-list li a {
         display: block;
         border: 1px solid #e2edfa;
         outline: none;
       }
 
-      .carousel-recipes-component .carousel-recipes-list li a:hover {
+      .carousel-component .carousel-list li a:hover {
         border: 1px solid #aaaaaa;
       }
 
-      .carousel-recipes-component .carousel-recipes-list li img {
+      .carousel-component .carousel-list li img {
         border: 1px solid #999;
         display: block;
       }
 
-      .carousel-recipes-component .carousel-recipes-prev {
+      .carousel-component .carousel-prev {
         position: absolute;
         top: 40px;
         z-index: 3;
@@ -43,7 +47,7 @@
         left: 5px;
       }
 
-      .carousel-recipes-component .carousel-recipes-next {
+      .carousel-component .carousel-next {
         position: absolute;
         top: 40px;
         z-index: 3;
