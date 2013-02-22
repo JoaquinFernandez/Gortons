@@ -1,3 +1,103 @@
-// Place all the styles related to the Recipes controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+#header-wrapper{
+      width:960px;
+      margin: 0 auto;
+      background-color:rgb(246,241,149);
+      height:100px;  
+}
+#header{
+      background-color:rgb(254,237,47); 
+      height:40px;  
+}
+
+#header-nav {
+      }  
+    #header-nav #header-nav-list {
+        list-style:none;
+    }
+    #header-nav #header-nav-list li{
+        float:left;
+        display:inline;
+    }
+    #header-nav #header-nav-list li a {
+        text-decoration: none;
+        width:200px;
+        color:#000;
+        float:left;
+        text-align:center;
+    }
+    
+#body-wrapper{
+      width:960px;
+      margin: auto;
+      background-color:rgb(246,241,149);
+}
+
+   /* End navigation bar styling. */
+#footer-nav {
+      }    
+    #footer-nav #footer-nav-list{
+        list-style:none;
+    }
+
+    #footer-nav #footer-nav-list li{
+        float:left;
+        display:inline;
+    }
+    #footer-nav #footer-nav-list li a{
+        text-decoration:none;
+        width:100px;
+        float:left;
+        text-align:center;
+        border-left: 1px solid #fff;
+        font-size:11px;
+    }
+
+    #footer-nav #footer-nav-list li a:hover{
+    }
+#mycarousel{
+    background-color:rgb(254,237,47);
+    margin: 40px;
+}
+      .carousel-component {
+        padding: 8px 16px 4px 16px;
+      }
+      .carousel-component .carousel-list li {
+        margin: 4px;
+        width: 79px; /* img width is 75 px from flickr + a.border-left (1) + a.border-right(1) +
+         img.border-left (1) + img.border-right (1)*/
+        height: 93px; /* image + row of text (87) + border-top (1) + border-bottom(1) + margin-bottom(4) */
+        /*  margin-left: auto;*/ /* for testing IE auto issue */
+      }
+
+      .carousel-component .carousel-list li a {
+        display: block;
+        border: 1px solid #e2edfa;
+        outline: none;
+      }
+
+      .carousel-component .carousel-list li a:hover {
+        border: 1px solid #aaaaaa;
+      }
+
+      .carousel-component .carousel-list li img {
+        border: 1px solid #999;
+        display: block;
+      }
+
+      .carousel-component .carousel-prev {
+        position: absolute;
+        top: 40px;
+        z-index: 3;
+        cursor: pointer;
+        left: 5px;
+      }
+
+      .carousel-component .carousel-next {
+        position: absolute;
+        top: 40px;
+        z-index: 3;
+        cursor: pointer;
+        right: 5px;
+      }
