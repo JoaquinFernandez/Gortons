@@ -2,6 +2,12 @@ class BloggersController < ApplicationController
   # GET /bloggers
   # GET /bloggers.json
   def home
+    @bloggers = Blogger.all
+
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render json: @bloggers }
+    end
   end
   
   end

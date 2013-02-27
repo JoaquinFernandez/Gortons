@@ -1,3 +1,3 @@
 class Blogger < ActiveRecord::Base
-  attr_accessible :blogName, :name, :recipe
+  attr_accessible :blogName, :name, :recipe, :bios
 end

@@ -1,8 +1,7 @@
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="JMyCarousel-home.css" />  	
+		<link rel="stylesheet" type="text/css" href="JMyCarousel-home.css" />
 		<title>Header</title>
 		<%= stylesheet_link_tag @home %>
 		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
@@ -17,12 +16,22 @@
 				});
 			});
 		</script>
-	<style type="text/css">#bljaIMGte{float:left;position:relative;}#bljaIMGte .bljaIMGtex {width:320px;position:absolute;top:10px;left:14px;}</style>
+		<style type="text/css">
+			#bljaIMGte {
+				float: left;
+				position: relative;
+			}
+			#bljaIMGte .bljaIMGtex {
+				width: 320px;
+				position: absolute;
+				top: 10px;
+				left: 14px;
+			}
+		</style>
 	</head>
 
 	<body >
 		<div id="page-wrapper">
-			
 
 			<nav id="header-nav" >
 				<ul id="header-nav-list">
@@ -39,126 +48,224 @@
 
 				</ul>
 			</nav>
-			
 
 			<%= image_tag 'Header.jpg', :style => "width: 960px; height: 270px;padding-bottom:-200px;float:left"%>
 
 			<!-- Carousel Structure -->
 			<div class="jMyCarousel">
-				
-				<ul id="carousel-ul">
-					
-					
-					
-					<li>
-						
-							<%= image_tag 'Headshot-Sample.jpg', :alt => "Headshot-Sample.jpg", :id => "1jpg" %>
-						<p class="textName">Name</p>
-						<p class="textBlog">Blog</p>
-						
-					
-					<%= image_tag 'Recipe-Icon.png' , :style=> "float:left" %>
-							<p class="textRecipe">Recipe</p>
-						<p class="textDescription">Decription</p>
-<p><a href="vote" style="width: 5px;padding-left: 70px;background-color:#FFFFFF"><%= image_tag 'Vote.png' , :style=> "height:" %></a></p>		
-				<div id="line-home"> </div>
-					</li>	
-					
-					
-					
-					
-					
-					
-					
-								
-					
-					<li>
-						
-						
-						<%= image_tag 'Headshot-Sample.jpg', :alt => "6.jpg", :id => "6.jpg" %>
-						<p class="textName">Name</p>
-						<p class="textBlog">Blog</p>
-					
-					<%= image_tag 'Recipe-Icon.png' , :style=> "float:left" %>
-							<p class="textRecipe">Recipe</p>
-						<p class="textDescription">Decription</p>
-<p><a href="vote" style="width: 5px;padding-left: 70px;background-color: #FFFFFF"><%= image_tag 'Vote.png' , :style=> "height:" %></a></p>					
-					<div id="line-home"> </div>
-					</li>
-							
-					
-					
-					<li>
-						
-						<%= image_tag 'Headshot-Sample.jpg', :alt => "3.jpg", :id => "3.jpg" %>
-						
-						<p class="textName">Name</p>
-						<p class="textBlog">Blog</p>
-						
-						<%= image_tag 'Recipe-Icon.png' , :style=> "float:left" %>
-							<p class="textRecipe">Recipe</p>
-						<p class="textDescription">Decription</p>
-	<p><a href="vote" style="width: 5px;padding-left: 70px;background-color: #FFFFFF"><%= image_tag 'Vote.png' , :style=> "height:" %></a></p>
-					<div id="line-home"> </div>	
-					</li>
-				
-					
-					
-					
-					
-					<li>
-						
-							<%= image_tag 'Headshot-Sample.jpg', :alt => "4.jpg", :id => "4.jpg" %>
-						<p class="textName">Name</p>
-						<p class="textBlog">Blog</p>
-						
-						<%= image_tag 'Recipe-Icon.png' , :style=> "float:left" %>
-							<p class="textRecipe">Recipe</p>
-							
-						<p class="textDescription">Decription</p>
-	<p><a href="vote" style="width: 5px;padding-left: 70px;background-color:#FFFFFF"><%= image_tag 'Vote.png' , :style=> "height:" %></a></p>
-						
-				<div id="line-home"> </div>
-					</li>
-					
-					
-					
-					<li>
-						
-						<%= image_tag 'Headshot-Sample.jpg', :alt => "5.jpg", :id => "5.jpg" %>
-						<p class="textName">Name</p>
-						<p class="textBlog">Blog</p>
-						
-						
-						<p class="textRecipe">Recipe</p>
-						<p class="textDescription">Decription</p>
-<p><a href="vote" style="width: 5px;padding-left: 70px;background-color: #FFFFFF"><%= image_tag 'Vote.png' , :style=> "height:" %></a></p>						
-						
-						<div id="line-home"> </div>
-					</li>
-				
-				</ul>
-				</div>
-			
 
-			
+				<ul id="carousel-ul">
+					<%= @bloggers.each do |blogger| %>
+
+					<li>
+						<%= image_tag 'blogger_images/Brenda.jpg', :alt => "Headshot-Sample.jpg", :id => "1jpg" %>
+						<p class="textName">
+						<%= blogger.name %>
+						</p>
+						<p class="textBlog">
+						<%= blogger.blogName %>
+						</p>
+
+						<%= image_tag 'Recipe-Icon.png' , :style=> "float:left" %>
+						<p class="textRecipe">
+						<%= blogger.recipe %>
+							
+    
+						</p>
+						<p class="textDescription">
+						<%= blogger.bios %>
+						</p>
+						<p>
+							<a href="vote" style="width: 5px;padding-left: 70px;background-color:#FFFFFF"><%= image_tag 'Vote.png' , :style=> "height:" %></a>
+						</p>
+						<div id="line-home"></div>
+					</li>
+
+					<li>
+
+						<%= image_tag 'blogger_images/Carolina.jpg', :alt => "6.jpg", :id => "6.jpg" %>
+						<p class="textName">
+						</p>
+						<p class="textBlog">
+						</p>
+
+						<%= image_tag 'Recipe-Icon.png' , :style=> "float:left" %>
+						<p class="textRecipe">
+							
+    
+						</p>
+						<p class="textDescription">
+						</p>
+						<p>
+							<a href="vote" style="width: 5px;padding-left: 70px;background-color:#FFFFFF"><%= image_tag 'Vote.png' , :style=> "height:" %></a>
+						</p>
+						<div id="line-home"></div>
+					</li>
+
+					<li>
+
+						<%= image_tag 'blogger_images/Erica.jpg', :alt => "3.jpg", :id => "3.jpg" %>
+
+						<p class="textName">
+							Name
+						</p>
+						<p class="textBlog">
+							Blog
+						</p>
+
+						<%= image_tag 'Recipe-Icon.png' , :style=> "float:left" %>
+						<p class="textRecipe">
+							Recipe
+						</p>
+						<p class="textDescription">
+							Decription
+						</p>
+						<p>
+							<a href="vote" style="width: 5px;padding-left: 70px;background-color: #FFFFFF"><%= image_tag 'Vote.png' , :style=> "height:" %></a>
+						</p>
+						<div id="line-home"></div>
+					</li>
+
+					<li>
+
+						<%= image_tag 'blogger_images/Laura.jpg', :alt => "4.jpg", :id => "4.jpg" %>
+						<p class="textName">
+							Name
+						</p>
+						<p class="textBlog">
+							Blog
+						</p>
+
+						<%= image_tag 'Recipe-Icon.png' , :style=> "float:left" %>
+						<p class="textRecipe">
+							Recipe
+						</p>
+
+						<p class="textDescription">
+							Decription
+						</p>
+						<p>
+							<a href="vote" style="width: 5px;padding-left: 70px;background-color:#FFFFFF"><%= image_tag 'Vote.png' , :style=> "height:" %></a>
+						</p>
+
+						<div id="line-home"></div>
+					</li>
+
+					<li>
+
+						<%= image_tag 'blogger_images/Nicole.jpg', :alt => "5.jpg", :id => "5.jpg" %>
+						<p class="textName">
+							Name
+						</p>
+						<p class="textBlog">
+							Blog
+						</p>
+
+						<p class="textRecipe">
+							Recipe
+						</p>
+						<p class="textDescription">
+							Decription
+						</p>
+						<p>
+							<a href="vote" style="width: 5px;padding-left: 70px;background-color: #FFFFFF"><%= image_tag 'Vote.png' , :style=> "height:" %></a>
+						</p>
+
+						<div id="line-home"></div>
+					</li>
+
+					<li>
+
+						<%= image_tag 'blogger_images/Pilar.jpg', :alt => "5.jpg", :id => "5.jpg" %>
+						<p class="textName">
+							Name
+						</p>
+						<p class="textBlog">
+							Blog
+						</p>
+
+						<p class="textRecipe">
+							Recipe
+						</p>
+						<p class="textDescription">
+							Decription
+						</p>
+						<p>
+							<a href="vote" style="width: 5px;padding-left: 70px;background-color: #FFFFFF"><%= image_tag 'Vote.png' , :style=> "height:" %></a>
+						</p>
+
+						<div id="line-home"></div>
+					</li>
+
+					<li>
+
+						<%= image_tag 'blogger_images/Stephanie.jpg', :alt => "5.jpg", :id => "5.jpg" %>
+						<p class="textName">
+							Name
+						</p>
+						<p class="textBlog">
+							Blog
+						</p>
+
+						<p class="textRecipe">
+							Recipe
+						</p>
+						<p class="textDescription">
+							Decription
+						</p>
+						<p>
+							<a href="vote" style="width: 5px;padding-left: 70px;background-color: #FFFFFF"><%= image_tag 'Vote.png' , :style=> "height:" %></a>
+						</p>
+
+						<div id="line-home"></div>
+					</li>
+
+					<li>
+
+						<%= image_tag 'blogger_images/Vianney.jpg', :alt => "5.jpg", :id => "5.jpg" %>
+						<p class="textName">
+							Name
+						</p>
+						<p class="textBlog">
+							Blog
+						</p>
+
+						<p class="textRecipe">
+							Recipe
+						</p>
+						<p class="textDescription"></p>
+						<p>
+							<a href="vote" style="width: 5px;padding-left: 70px;background-color: #FFFFFF"><%= image_tag 'Vote.png' , :style=> "height:" %></a>
+						</p>
+
+						<div id="line-home"></div>
+					</li>
+					<% end %>
+
+				</ul>
+			</div>
+
 			<div id="backgroundBottomHome">
-				<a href="vote" style="background-color: rgb(246,241,149);width:600px"><%=image_tag 'Bottom-Image.jpg', :style => "width: 900px; height: 200px;margin-left:30px"%></a>
-		
-<footer id="page-footer">
-	<nav id="footer-nav">
-		<ul id="footer-nav-list">
-			<li><a id="firstchild" href="official_rules" title="Official Rules">Official Rules</a</li>
-				<li><a href="http://gortons.com/privacy-policy" title="Privacy Policy">Privacy Policy</a</li>
-			
-			<li><a href="ContactUs.html" title="Contact Us">Contact Us</a</li>
-			
-				
-</ul>
-</nav>
-</footer>
-</div>
-		
+				<a href="vote" style="background-color: rgb(246,241,149);width:600px"><%= image_tag 'Bottom-Image.jpg', :style => "width: 900px; height: 200px;margin-left:30px"%></a>
+
+				<footer id="page-footer">
+					<nav id="footer-nav">
+						<ul id="footer-nav-list">
+							<li>
+								<a id="firstchild" href="official_rules" title="Official Rules">Official Rules</a
+							</li>
+							<li>
+								<a href="http://gortons.com/privacy-policy" title="Privacy Policy">Privacy Policy</a
+							</li>
+
+							<li>
+								<a href="ContactUs.html" title="Contact Us">Contact Us</a
+							</li>
+
+						</ul>
+					</nav>
+				</footer>
+			</div>
 		</div>
 	</body>
 </html>
