@@ -1,87 +1,14 @@
-<!-- Carousel Structure -->
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-	<head>
-		<link rel="stylesheet" type="text/css" href="JMyCarousel-recipes.css" />  	
-		<%= javascript_include_tag "jquery-1.2.1.pack" %>
-		<%= javascript_include_tag "jMyCarousel" %>
-		<!-- Optional -->
-		<%= javascript_include_tag "jquery.mousewheel" %>
-		<script type="text/javascript">
-			$(function() {
-				$(".jMyCarousel").jMyCarousel({
-					visible : '100%'
-				});
-			});
-		</script>
-	</head>
-	<body >
-		<div id="page-wrapper-recipes">
-			<nav id="header-nav" >
-				<ul id="header-nav-list">
+<% provide(:title, 'Sign up') %>
+<h1>Sign up</h1>
 
-					<li>
-						<a id="first" href="http://gortonsenespanol.com/productos"> GORTON'S PRODUCTS</a>
+<div class="row">
+  <div class="span6 offset3">
+    <%= form_for(@user) do |f| %>
 
-					</li>
+      <%= f.label :email %>
+      <%= f.text_field :email %>
 
-					<li>
-						<a  href="http://gortonsenespanol.com/"> GORTONSENESPANOL.COM</a>
-
-					</li>
-
-				</ul>
-			</nav>
-			<div id="wrapper-logo-recipe">
-				<div id="image-logo-recipe">
-					<%= image_tag 'Logo.png', :alt => "Logo", :id => "vote_logo" %>
-				</div>
-			</div>
-			<div id="header-recipes-gradient"></div>
-			<div id="body-recipes-wrapper">
-				<div id="body-recipes-gradient">
-					<div id="body-recipes-carousel">
-						<div class="jMyCarousel">
-							<ul>
-								<li>
-									<%= image_tag '1.jpg', :alt => "1.jpg", :id =>
-									"1.jpg" %>
-								</li>
-								<li>
-									<%= image_tag '6.jpg', :alt => "6.jpg", :id => "6.jpg" %>
-								</li>
-								<li>
-									<%= image_tag '3.jpg', :alt => "3.jpg", :id => "3.jpg" %>
-								</li>
-								<li>
-									<%= image_tag '4.jpg', :alt => "4.jpg", :id => "4.jpg" %>
-								</li>
-								<li>
-									<%= image_tag '5.jpg', :alt => "5.jpg", :id => "5.jpg" %>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-
-				<footer id="page-footer">
-					<nav id="footer-nav">
-						<ul id="footer-nav-list">
-							<li>
-								<a id="firstchild" href="OfficialRules.html" title="Official Rules">Official Rules</a
-							</li>
-							<li>
-								<a href="http://gortons.com/privacy_policy.htm" title="Privacy Policy">Privacy Policy</a
-							</li>
-
-							<li>
-								<a href="ContactUs.html" title="Contact Us">Contact Us</a
-							</li>
-
-						</ul>
-					</nav>
-				</footer>
-			</div>
-		</div>
-	</body>
-</html>
+      <%= f.submit "Create my account", class: "btn btn-large btn-primary" %>
+    <% end %>
+  </div>
+</div>

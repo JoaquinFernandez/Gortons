@@ -3,10 +3,20 @@ class RecipesController < ApplicationController
   # GET /vote
   # GET /vote.json
   def vote
-
+    @recipe = Recipe.all
     respond_to do |format|
       format.html # index.html.erb
-      format.json { render json: @recipes }
+      format.json { render json: @recipe }
+    end
+  end
+  
+  # GET /vote
+  # GET /vote.json
+  def chooserecipe
+    @recipe = Recipe.all
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render json: @recipe }
     end
   end
   
@@ -27,8 +37,7 @@ class RecipesController < ApplicationController
     @recipe = Recipe.find(params[:id])
 
     respond_to do |format|
-      format.html # show.html.erb
-      format.json { render json: @recipe }
+      format.js
     end
   end
 
