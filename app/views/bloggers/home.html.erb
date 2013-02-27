@@ -2,7 +2,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="JMyCarousel-recipes.css" />  	
+		<link rel="stylesheet" type="text/css" href="JMyCarousel-home.css" />  	
 		<title>Header</title>
 		<%= stylesheet_link_tag @home %>
 		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
@@ -45,74 +45,111 @@
 
 			<!-- Carousel Structure -->
 			<div class="jMyCarousel">
-				<ul id="carousel-ul">
-					<li><%= image_tag 'Headshot-Sample.jpg', :alt => "Headshot-Sample.jpg", :id => "1jpg" %>
-						<p style="text-align: center">Name</p>
-						<p style="text-align: center">Blog</p>
-					
-					<%= image_tag 'Recipe-Icon.png' , :style=> "float:left" %>
-							<p style="text-align: center">Recipe</p>
-						<p style="text-align: center">Decription</p>
-	<p><a href="" style="width: 5px;position: relative;padding-left: 150px"><%= image_tag 'Vote.png' , :style=> "height:" %></a></p>
-
 				
+				<ul id="carousel-ul">
+					
+					
+					
+					<li>
 						
+							<%= image_tag 'Headshot-Sample.jpg', :alt => "Headshot-Sample.jpg", :id => "1jpg" %>
+						<p class="textName">Name</p>
+						<p class="textBlog">Blog</p>
 						
-						
-					</li>
-					<li><%= image_tag '6.jpg', :alt => "6.jpg", :id => "6.jpg" %>
-						<p style="text-align: center">Name</p>
-						<p style="text-align: center">Blog</p>
 					
 					<%= image_tag 'Recipe-Icon.png' , :style=> "float:left" %>
-							<p style="text-align: center">Recipe</p>
-						<p style="text-align: center">Decription</p>
-	<p><a href="" style="width: 5px;position: relative;padding-left: 150px"><%= image_tag 'Vote.png' , :style=> "height:" %></a></p>
+							<p class="textRecipe">Recipe</p>
+						<p class="textDescription">Decription</p>
+<p><a href="vote" style="width: 5px;padding-left: 70px;background-color:#FFFFFF"><%= image_tag 'Vote.png' , :style=> "height:" %></a></p>		
+				<div id="line-home"> </div>
+					</li>	
+					
+					
+					
+					
+					
+					
+					
+								
+					
+					<li>
+						
+						
+						<%= image_tag 'Headshot-Sample.jpg', :alt => "6.jpg", :id => "6.jpg" %>
+						<p class="textName">Name</p>
+						<p class="textBlog">Blog</p>
+					
+					<%= image_tag 'Recipe-Icon.png' , :style=> "float:left" %>
+							<p class="textRecipe">Recipe</p>
+						<p class="textDescription">Decription</p>
+<p><a href="vote" style="width: 5px;padding-left: 70px;background-color: #FFFFFF"><%= image_tag 'Vote.png' , :style=> "height:" %></a></p>					
+					<div id="line-home"> </div>
 					</li>
-					<li><%= image_tag '3.jpg', :alt => "3.jpg", :id => "3.jpg" %>
-						<p style="text-align: center">Name</p>
-						<p style="text-align: center">Blog</p>
+							
+					
+					
+					<li>
 						
-						<p style="text-align: center">Recipe</p>
-						<p style="text-align: center">Decription</p>
-	<p><a href="" style="width: 5px;position: relative;padding-left: 150px"><%= image_tag 'Vote.png' , :style=> "height:" %></a></p>
+						<%= image_tag 'Headshot-Sample.jpg', :alt => "3.jpg", :id => "3.jpg" %>
 						
+						<p class="textName">Name</p>
+						<p class="textBlog">Blog</p>
+						
+						<%= image_tag 'Recipe-Icon.png' , :style=> "float:left" %>
+							<p class="textRecipe">Recipe</p>
+						<p class="textDescription">Decription</p>
+	<p><a href="vote" style="width: 5px;padding-left: 70px;background-color: #FFFFFF"><%= image_tag 'Vote.png' , :style=> "height:" %></a></p>
+					<div id="line-home"> </div>	
 					</li>
-					<li><%= image_tag '4.jpg', :alt => "4.jpg", :id => "4.jpg" %>
-						<p style="text-align: center">Name</p>
-						<p style="text-align: center">Blog</p>
+				
+					
+					
+					
+					
+					<li>
 						
-						<p style="text-align: center">Recipe</p>
-						<p style="text-align: center">Decription</p>
-	<p><a href="" style="width: 5px;position: relative;padding-left: 150px"><%= image_tag 'Vote.png' , :style=> "height:" %></a></p>
+							<%= image_tag 'Headshot-Sample.jpg', :alt => "4.jpg", :id => "4.jpg" %>
+						<p class="textName">Name</p>
+						<p class="textBlog">Blog</p>
 						
+						<%= image_tag 'Recipe-Icon.png' , :style=> "float:left" %>
+							<p class="textRecipe">Recipe</p>
+							
+						<p class="textDescription">Decription</p>
+	<p><a href="vote" style="width: 5px;padding-left: 70px;background-color:#FFFFFF"><%= image_tag 'Vote.png' , :style=> "height:" %></a></p>
 						
-						
+				<div id="line-home"> </div>
 					</li>
-					<li><%= image_tag '5.jpg', :alt => "5.jpg", :id => "5.jpg" %>
-						<p style="text-align: center">Name</p>
-						<p style="text-align: center">Blog</p>
+					
+					
+					
+					<li>
+						
+						<%= image_tag 'Headshot-Sample.jpg', :alt => "5.jpg", :id => "5.jpg" %>
+						<p class="textName">Name</p>
+						<p class="textBlog">Blog</p>
 						
 						
-						<p style="text-align: center">Recipe</p>
-						<p style="text-align: center">Decription</p>
-	<p><a href="" style="width: 5px;position: relative;padding-left: 150px"><%= image_tag 'Vote.png' , :style=> "height:" %></a></p>
+						<p class="textRecipe">Recipe</p>
+						<p class="textDescription">Decription</p>
+<p><a href="vote" style="width: 5px;padding-left: 70px;background-color: #FFFFFF"><%= image_tag 'Vote.png' , :style=> "height:" %></a></p>						
 						
-						
-						
+						<div id="line-home"> </div>
 					</li>
+				
 				</ul>
-			</div>
+				</div>
+			
 
 			
-			
-				<%=image_tag 'Bottom-Image.jpg', :style => "width: 900px; height: 200px;padding-left:30px"%>
+			<div id="backgroundBottomHome">
+				<a href="vote" style="background-color: rgb(246,241,149);width:600px"><%=image_tag 'Bottom-Image.jpg', :style => "width: 900px; height: 200px;margin-left:30px"%></a>
 		
 <footer id="page-footer">
 	<nav id="footer-nav">
 		<ul id="footer-nav-list">
-			<li><a id="firstchild" href="OfficialRules.html" title="Official Rules">Official Rules</a</li>
-				<li><a href="http://gortons.com/privacy_policy.htm" title="Privacy Policy">Privacy Policy</a</li>
+			<li><a id="firstchild" href="official_rules" title="Official Rules">Official Rules</a</li>
+				<li><a href="http://gortons.com/privacy-policy" title="Privacy Policy">Privacy Policy</a</li>
 			
 			<li><a href="ContactUs.html" title="Contact Us">Contact Us</a</li>
 			
@@ -120,6 +157,7 @@
 </ul>
 </nav>
 </footer>
+</div>
 		
 		</div>
 	</body>

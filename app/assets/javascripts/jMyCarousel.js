@@ -106,8 +106,8 @@ $.fn.jMyCarousel = function(o) {
         
         /******* Buttons **********/
         if(defaultBtn && o.auto !== true){ 					//Add buttons when necessary (In default mode and not auto)
-	        prev.css({'opacity':'0.6'});
-	        next.css({'opacity' :'0.6'});
+	        prev.css({'opacity':'1'});
+	        next.css({'opacity' :'1'});
 	        div.prepend(prev);
 	        div.prepend(next);
 	        o.btnPrev = prev;
@@ -132,8 +132,8 @@ $.fn.jMyCarousel = function(o) {
         // Calculates the size of the main div according to the given size (can be in percent, in value or in pixels)
         var divSize, cssSize, cssUnity;
         if(cssU == '%'){									// in percent 
-        	divSize = 0;									// We don't have the value in pixels unless we set the percent value first. So 0, and will catch it later
-        	cssSize = parseInt(v);  
+        	divSize = 90;									// We don't have the value in pixels unless we set the percent value first. So 0, and will catch it later
+        	cssSize = 90;  
        		cssUnity = "%";
         }
         else if(cssU == 'px'){									// in pixels

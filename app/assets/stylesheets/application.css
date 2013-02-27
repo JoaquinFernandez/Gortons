@@ -6,8 +6,13 @@
  * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
  *
  * You're free to add application-wide styles to this file and they'll appear at the top of the
+<<<<<<< HEAD
  * compiled file, but it's generally better to create a new file per style scope.
  *= require jquery.facebox
+=======
+ * compiled fborder:1px solid #1c6f8eile, but it's generally better to create a new file per style scope.
+ *
+>>>>>>> 88e1358d775d96b24926b1f89a2e489d27091b4f
  *= require_self
  *= require_tree .
  */
