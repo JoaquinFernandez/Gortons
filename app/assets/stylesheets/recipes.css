@@ -21,6 +21,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d1cb81', end
       padding-right:60px;
       padding-top:60px;
       padding-bottom:20px;
+      
 }
 
 #body-recipes-gradient{
@@ -32,11 +33,14 @@ background: -o-radial-gradient(center, ellipse cover,  #d1cb81 1%,#f6f195 12%,#f
 background: -ms-radial-gradient(center, ellipse cover,  #d1cb81 1%,#f6f195 12%,#f6f195 71%,#f6f195 74%,#b2ad6c 100%); /* IE10+ */
 background: radial-gradient(ellipse at center,  #d1cb81 1%,#f6f195 12%,#f6f195 71%,#f6f195 74%,#b2ad6c 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d1cb81', endColorstr='#b2ad6c',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-
+height: 500px;
+}
 }
 #body-recipes-carousel{
   width:auto;
   padding:5px
+f
+}
 }
 
 #wrapper-logo-recipe{
@@ -45,25 +49,102 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d1cb81', end
 
 #image-logo-recipe{
       position:absolute;
-      top:5px;
-      left:90px;
+      top:90px;
+      left:400px;
 }
 #page-wrapper-recipes{
   width:960px;
   margin: 0 auto;
  background-color:rgb(246,241,149);
+ 
   
 }
 #popup {
-    height: 50px;
-    width: 200px;
-    text-align: center;
-    vertical-align:middle;
-    background-color: cornflowerblue;
-    color: white;
-    display: none;
-    padding-top: 8px;
-    
-
-    position: absolute;
+  
 }
+
+
+#image-recipe{
+	
+	float:left;
+	width:50px;	
+	
+}
+
+
+
+
+
+
+.jMyCarousel #carousel-ul-recipe li {
+  
+  margin-left:20px;
+  margin-top:20px;
+  margin-bottom:20px;
+
+  
+  width:221px;
+ 
+
+background-color:#fff;
+  height: 450px;
+}
+  
+}
+
+div.jMyCarousel{
+ 
+  display:inline-block;
+  width:100px;
+  margin-left:5%;
+
+}
+
+
+
+.textName-recipe{
+  text-align: center;
+  font-family: ITCFranklinGothicStd-Hvy;
+  margin-top:10px;
+  font-size:11px;
+ 
+}
+
+
+
+
+.textBloggerName-recipe{
+  text-align: center;
+  font-family: ITCFranklinGothicStd-Hvy;
+  margin-top:10px;
+  font-size:11px;
+ 
+}
+
+.textRecipe-recipe{
+    text-align: center;
+  font-family: ITCFranklinGothicStd-Book;
+}
+.textBlog-recipe{
+   text-align: center;
+  font-family: ITC FranklinGothic Std;
+  
+}
+
+.textDescription-recipe{
+    text-align: center;
+  font-family: ITC FranklinGothic Std;
+  
+}
+
+.ingredientsRecipes{
+	
+text-align:center;
+}
+
+
+
+
+
+
+
