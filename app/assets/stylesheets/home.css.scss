@@ -3,64 +3,88 @@
 #page-wrapper{
 	width:960px;
 	margin: 0 auto;
- background-color:rgb(246,241,149);
+  background-color:rgb(254,237,47);
   
 }
 
-#blogger-carousel{
+
+
+
+.jMyCarousel #carousel-ul li {
+  
+  margin-left:80px;
+  margin-top:20px;
+  margin-bottom:20px;
+
+  
+  width:118px;
+
+background-color:#fff;
   
   
-    background-color:rgb(254,237,47);  
+}
+
+div.jMyCarousel{
+ 
+  display:inline-block;
+  width:100px;
+  margin-left:5%;
+
+}
+
+.jMyCarousel #wrapper-home{
+  
+
+
+
 }
 
 
-.carousel-component {
-        padding: 8px 16px 4px 16px;
-        margin-top: 20px;
-      }
+#backgroundBottomHome{
+  background-color: rgb(246,241,149);
+  border-top:1px;
 
-      .carousel-component .carousel-list li {
-        margin: 4px;
-        width: 79px; /* img width is 75 px from flickr + a.border-left (1) + a.border-right(1) +
-         img.border-left (1) + img.border-right (1)*/
-        height: 93px; /* image + row of text (87) + border-top (1) + border-bottom(1) + margin-bottom(4) */
-        /*  margin-left: auto;*/ /* for testing IE auto issue */
-      float:left;}
+}
 
-      .carousel-component .carousel-list li a {
-        display: block;
-        border: 1px solid #e2edfa;
-        outline: none;
-      }
+#line-home{
+  
+  background: #f2f6f8; /* Old browsers */
+background: -moz-linear-gradient(left,  #f2f6f8 0%, #8bc1e5 0%, #006eb6 100%, #e0eff9 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,#f2f6f8), color-stop(0%,#8bc1e5), color-stop(100%,#006eb6), color-stop(100%,#e0eff9)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left,  #f2f6f8 0%,#8bc1e5 0%,#006eb6 100%,#e0eff9 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left,  #f2f6f8 0%,#8bc1e5 0%,#006eb6 100%,#e0eff9 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left,  #f2f6f8 0%,#8bc1e5 0%,#006eb6 100%,#e0eff9 100%); /* IE10+ */
+background: linear-gradient(to right,  #f2f6f8 0%,#8bc1e5 0%,#006eb6 100%,#e0eff9 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f6f8', endColorstr='#e0eff9',GradientType=1 ); /* IE6-9 */
 
-      .carousel-component .carousel-list li a:hover {
-        border: 1px solid #aaaaaa;
-      }
 
-      .carousel-component .carousel-list li img {
-        border: 1px solid #999;
-        display: block;
-      }
-
-      .carousel-component .carousel-prev {
-        position: absolute;
-        top: 40px;
-        z-index: 3;
-        cursor: pointer;
-        left: 5px;
-      }
-
-      .carousel-component .carousel-next {
-        position: absolute;
-        top: 40px;
-        z-index: 3;
-        cursor: pointer;
-        right: 5px;
-      }
+  height:3px;
+  margin-bottom:3px;
+}
 
 
 
+.textName{
+  text-align: center;
+  font-family: ITCFranklinGothicStd-Hvy;
+  
+  font-size:11px;
+ 
+}
 
+.textRecipe{
+    text-align: center;
+  font-family: ITCFranklinGothicStd-Book;
+}
+.textBlog{
+   text-align: center;
+  font-family: ITC FranklinGothic Std;
+  
+}
 
-
+.textDescription{
+    text-align: center;
+  font-family: ITC FranklinGothic Std;
+  
+}
 
