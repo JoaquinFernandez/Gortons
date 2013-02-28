@@ -48,112 +48,51 @@
 				</p>
 			</div>
 			<div id="header-recipes-gradient"></div>
-			<div id="body-recipes-wrapper">
-				<div id="body-recipes-gradient">
+			<div id="body-recipes-wrapper"style="height: 800px">
+				<div id="body-recipes-gradient"style="height: 650px">
 					<div id="body-recipes-carousel">
 						
 						
 						
 						<div class="jMyCarousel">
 				
-				<ul id="carousel-ul-recipe">
+				<ul id="carousel-ul-recipe" >
 					
 					
 					
 					<li>
 
-									<%= image_tag 'Headshot-Sample.jpg', :alt => "Headshot-Sample.jpg", :id => "1jpg" %>
-									<p class="textName-recipe">
-										Name
-									</p>
-									<p class="textBlog-recipe">
-										Blog
-									</p>
-
-									<%= image_tag 'Recipe-Icon.png' , :style=> "float:left" %>
-									<p class="textRecipe-recipe">
-										Recipe
-									</p>
-									<p class="textDescription-recipe">
-										Decription
-									</p>
-									<p>
-										<a href="vote" style="width: 5px;padding-left: 70px;background-color:#FFFFFF"><%= image_tag 'Vote.png' , :style=> "height:" %></a>
-									</p>
-									<div id="line-home"></div>
-								</li>	
-					
-					
-					
-					<li>
-
-									<%= image_tag 'Headshot-Sample.jpg', :alt => "6.jpg", :id => "6.jpg" %>
-									<p class="textName-recipe">
-										Name
-									</p>
-									<p class="textBlog-recipe">
-										Blog
-									</p>
-
-									<%= image_tag 'Recipe-Icon.png' , :style=> "float:left" %>
-									<p class="textRecipe-recipe">
-										Recipe
-									</p>
-									<p class="textDescription-recipe">
-										Decription
-									</p>
-									<p>
-										<a href="vote" style="width: 5px;padding-left: 70px;background-color: #FFFFFF"><%= image_tag 'Vote.png' , :style=> "height:" %></a>
-									</p>
-									<div id="line-home"></div>
-								</li>
+									<%= image_tag 'Headshot-Sample.jpg', :alt => "3.jpg" , :id=>"BloggerImage-recipe", :hspace=>10 %>
+						
+						<p class="PreparedText">Prepared by:</p>
+						
+						<p class="BloggerNameText">Name</p>
+						
+						
+						<%= image_tag 'Laura-Muller_Recipe-Image.jpg', :alt => "3.jpg", :id => "recipeImage" %>
+						
+						<p class="NameRecipyText">Name Recipe</p>
+						
+						<p class="IngredientsText">Ingredients</p>
+						
+						<p class="IntroducedByBlogerText">aaaaaaaa  vvvv</br>vvv</br>vvv vvv</br>vvvvvv</br> vvvvvvvvvvvv vvv</br>vvvvvvvvvvv vvvvv</br>vvv vvvvvvv vvvv</p>
 							
-					
-					
-					<li>
-						
-						<%= image_tag 'Headshot-Sample.jpg', :alt => "3.jpg" , :id=>"image-recipe" %>
-						
-						<p class="margin">Prepared by:</p>
-						
-						<p class="textBloggerName-recipe">Name</p>
-						
-						
-						<%= image_tag 'Laura-Muller_Recipe-Image.jpg', :alt => "3.jpg", :id => "3.jpg" %>
-						
-						<p class="textName-recipe">Name Recipe</p>
-						
-						<p class="ingredientsRecipes">Ingredients</p>
-						
-				
-							
-							<p style="margin-left: 20px">List of ingredients</p>
-							
-							
-							
-					
-						
-						
-						
-						
-						<p class="directionsRecipes">Directions</p>
+						<p class="IngredientsText">Directions</p><!--#Share has the same style as "Ingredients"-->
 						
 						<div>
 						
-						<p class="margin">Directions explanation</p>
-							
-							
-							
+						<p class="IntroTextDescription">bueno vamos a ve que pasaaaa aaaaaaa aaaaaa aaaa aaaa aaaaaa aaaa avamos a ve que pasaaaaaaaaaa aaaaaaaaa aaaaaaaa aaaaaaaa avamos a ve que pasaaa aaaaaaaa aaaaaa aaaaaaa aaaaaa aaaaaa</p>
+								  
 						</div>
 						
 						
-						<div id="first" align="right">
-										<table align="left">
+						<div>
+										<table >
 											<tr>
 												<td>
 												<div>
-													<p class= "NetworksShare">Share</p>
-													<a href="http://twitter.com/home?status=Cook,Blog and Win with Gortons - www.cookblogandwin.gortons.com"  style="background-color: #FFFFFF"><%= image_tag 'Twitter.png' , :style=> "float:left" %></a>
+													<p class= "SharedText">Share</p> <!--Share has the same style as "Prepared by"-->
+													<a href="http://twitter.com/home?status=Cook,Blog and Win with Gortons - www.cookblogandwin.gortons.com"  style="padding-left:20px;background-color: #FFFFFF"><%= image_tag 'Twitter.png' , :style=> "float:left" %></a>
 													<a href="http://www.facebook.com/sharer.php?u=www.cookblogandwin.gortons.com&t=Cook,Blog and Win with Gortons"   style="background-color: #FFFFFF";><%= image_tag 'Facebook.jpg' , :style=> "" %></a>
 												</div></td>
 												<td>
@@ -162,7 +101,7 @@
 													<table >
 														<tr>
 															<td>
-															<div align="left">
+															<div>
 																<p>
 																	<a href="voteButton" style="width: 5px;padding-left:90px;background-color: #FFFFFF"><%= image_tag 'Vote-Button.png' , :style=> "height: 20px"  %></a>
 																</p>
@@ -171,14 +110,244 @@
 
 															<td>
 															<div>
-																<p style="padding-left:10px;">Votes</p>
+																<div>
+																	<p class ="NumVotos"; style="padding-left:15px;padding-top:10px">34</p>
+																	
+																</div>
+																<div>
+																<p class="VotesText"; style="padding-left:10px">VOTES</p>
+																</div>
 
 															</div></td>
 														</tr>
 													</table>
 
 													<p>
-														<a href="vote" style="width: 5px;padding-left:90px;background-color: #FFFFFF"><%= image_tag 'Vote-Button-English.png' , :style=> "height: 20px"  %></a>
+														<a href="vote" style="width: 5px;padding-left:80px;background-color: #FFFFFF"><%= image_tag 'Vote-Button-English.png' , :style=> "height: 20px"  %></a>
+													</p>
+												</div></td>
+											</tr>
+										</table>
+									</div>
+
+						<div id="line-home"> </div>	
+								</li>	
+					
+					
+					
+					<li>
+
+									<%= image_tag 'Headshot-Sample.jpg', :alt => "3.jpg" , :id=>"BloggerImage-recipe", :hspace=>10 %>
+						
+						<p class="PreparedText">Prepared by:</p>
+						
+						<p class="BloggerNameText">Name</p>
+						
+						
+						<%= image_tag 'Laura-Muller_Recipe-Image.jpg', :alt => "3.jpg", :id => "recipeImage" %>
+						
+						<p class="NameRecipyText">Name Recipe</p>
+						
+						<p class="IngredientsText">Ingredients</p>
+						
+						<p class="IntroducedByBlogerText">aaaaaaaa  vvvv</br>vvv</br>vvv vvv</br>vvvvvv</br> vvvvvvvvvvvv vvv</br>vvvvvvvvvvv vvvvv</br>vvv vvvvvvv vvvv</p>
+							
+						<p class="IngredientsText">Directions</p><!--#Share has the same style as "Ingredients"-->
+						
+						<div>
+						
+						<p class="IntroTextDescription">bueno vamos a ve que pasaaaa aaaaaaa aaaaaa aaaa aaaa aaaaaa aaaa avamos a ve que pasaaaaaaaaaa aaaaaaaaa aaaaaaaa aaaaaaaa avamos a ve que pasaaa aaaaaaaa aaaaaa aaaaaaa aaaaaa aaaaaa</p>
+								  
+						</div>
+						
+						
+						<div>
+										<table >
+											<tr>
+												<td>
+												<div>
+													<p class= "SharedText">Share</p> <!--Share has the same style as "Prepared by"-->
+													<a href="http://twitter.com/home?status=Cook,Blog and Win with Gortons - www.cookblogandwin.gortons.com"  style="padding-left:20px;background-color: #FFFFFF"><%= image_tag 'Twitter.png' , :style=> "float:left" %></a>
+													<a href="http://www.facebook.com/sharer.php?u=www.cookblogandwin.gortons.com&t=Cook,Blog and Win with Gortons"   style="background-color: #FFFFFF";><%= image_tag 'Facebook.jpg' , :style=> "" %></a>
+												</div></td>
+												<td>
+												<div>
+
+													<table >
+														<tr>
+															<td>
+															<div>
+																<p>
+																	<a href="voteButton" style="width: 5px;padding-left:90px;background-color: #FFFFFF"><%= image_tag 'Vote-Button.png' , :style=> "height: 20px"  %></a>
+																</p>
+
+															</div></td>
+
+															<td>
+															<div>
+																<div>
+																	<p class ="NumVotos"; style="padding-left:15px;padding-top:10px">34</p>
+																	
+																</div>
+																<div>
+																<p class="VotesText"; style="padding-left:10px">VOTES</p>
+																</div>
+
+															</div></td>
+														</tr>
+													</table>
+
+													<p>
+														<a href="vote" style="width: 5px;padding-left:80px;background-color: #FFFFFF"><%= image_tag 'Vote-Button-English.png' , :style=> "height: 20px"  %></a>
+													</p>
+												</div></td>
+											</tr>
+										</table>
+									</div>
+
+						<div id="line-home"> </div>	
+								</li>
+							
+					
+					
+					<li>
+						
+						<%= image_tag 'Headshot-Sample.jpg', :alt => "3.jpg" , :id=>"BloggerImage-recipe", :hspace=>10 %>
+						
+						<p class="PreparedText">Prepared by:</p>
+						
+						<p class="BloggerNameText">Name</p>
+						
+						
+						<%= image_tag 'Laura-Muller_Recipe-Image.jpg', :alt => "3.jpg", :id => "recipeImage" %>
+						
+						<p class="NameRecipyText">Name Recipe</p>
+						
+						<p class="IngredientsText">Ingredients</p>
+						
+						<p class="IntroducedByBlogerText">aaaaaaaa  vvvv</br>vvv</br>vvv vvv</br>vvvvvv</br> vvvvvvvvvvvv vvv</br>vvvvvvvvvvv vvvvv</br>vvv vvvvvvv vvvv</p>
+							
+						<p class="IngredientsText">Directions</p><!--#Share has the same style as "Ingredients"-->
+						
+						<div>
+						
+						<p class="IntroTextDescription">bueno vamos a ve que pasaaaa aaaaaaa aaaaaa aaaa aaaa aaaaaa aaaa avamos a ve que pasaaaaaaaaaa aaaaaaaaa aaaaaaaa aaaaaaaa avamos a ve que pasaaa aaaaaaaa aaaaaa aaaaaaa aaaaaa aaaaaa</p>
+								  
+						</div>
+						
+						
+						<div>
+										<table >
+											<tr>
+												<td>
+												<div>
+													<p class= "SharedText">Share</p> <!--Share has the same style as "Prepared by"-->
+													<a href="http://twitter.com/home?status=Cook,Blog and Win with Gortons - www.cookblogandwin.gortons.com"  style="padding-left:20px;background-color: #FFFFFF"><%= image_tag 'Twitter.png' , :style=> "float:left" %></a>
+													<a href="http://www.facebook.com/sharer.php?u=www.cookblogandwin.gortons.com&t=Cook,Blog and Win with Gortons"   style="background-color: #FFFFFF";><%= image_tag 'Facebook.jpg' , :style=> "" %></a>
+												</div></td>
+												<td>
+												<div>
+
+													<table >
+														<tr>
+															<td>
+															<div>
+																<p>
+																	<a href="voteButton" style="width: 5px;padding-left:90px;background-color: #FFFFFF"><%= image_tag 'Vote-Button.png' , :style=> "height: 20px"  %></a>
+																</p>
+
+															</div></td>
+
+															<td>
+															<div>
+																<div>
+																	<p class ="NumVotos"; style="padding-left:15px;padding-top:10px">34</p>
+																	
+																</div>
+																<div>
+																<p class="VotesText"; style="padding-left:10px">VOTES</p>
+																</div>
+
+															</div></td>
+														</tr>
+													</table>
+
+													<p>
+														<a href="vote" style="width: 5px;padding-left:80px;background-color: #FFFFFF"><%= image_tag 'Vote-Button-English.png' , :style=> "height: 20px"  %></a>
+													</p>
+												</div></td>
+											</tr>
+										</table>
+									</div>
+
+						<div id="line-home"> </div>	
+						
+					</li>
+					
+					<li>
+						
+						<%= image_tag 'Headshot-Sample.jpg', :alt => "3.jpg" , :id=>"BloggerImage-recipe", :hspace=>10 %>
+						
+						<p class="PreparedText">Prepared by:</p>
+						
+						<p class="BloggerNameText">Name</p>
+						
+						
+						<%= image_tag 'Laura-Muller_Recipe-Image.jpg', :alt => "3.jpg", :id => "recipeImage" %>
+						
+						<p class="NameRecipyText">Name Recipe</p>
+						
+						<p class="IngredientsText">Ingredients</p>
+						
+						<p class="IntroducedByBlogerText">aaaaaaaa  vvvv</br>vvv</br>vvv vvv</br>vvvvvv</br> vvvvvvvvvvvv vvv</br>vvvvvvvvvvv vvvvv</br>vvv vvvvvvv vvvv</p>
+							
+						<p class="IngredientsText">Directions</p><!--#Share has the same style as "Ingredients"-->
+						
+						<div>
+						
+						<p class="IntroTextDescription">bueno vamos a ve que pasaaaa aaaaaaa aaaaaa aaaa aaaa aaaaaa aaaa avamos a ve que pasaaaaaaaaaa aaaaaaaaa aaaaaaaa aaaaaaaa avamos a ve que pasaaa aaaaaaaa aaaaaa aaaaaaa aaaaaa aaaaaa</p>
+								  
+						</div>
+						
+						
+						<div>
+										<table >
+											<tr>
+												<td>
+												<div>
+													<p class= "SharedText">Share</p> <!--Share has the same style as "Prepared by"-->
+													<a href="http://twitter.com/home?status=Cook,Blog and Win with Gortons - www.cookblogandwin.gortons.com"  style="padding-left:20px;background-color: #FFFFFF"><%= image_tag 'Twitter.png' , :style=> "float:left" %></a>
+													<a href="http://www.facebook.com/sharer.php?u=www.cookblogandwin.gortons.com&t=Cook,Blog and Win with Gortons"   style="background-color: #FFFFFF";><%= image_tag 'Facebook.jpg' , :style=> "" %></a>
+												</div></td>
+												<td>
+												<div>
+
+													<table >
+														<tr>
+															<td>
+															<div>
+																<p>
+																	<a href="voteButton" style="width: 5px;padding-left:90px;background-color: #FFFFFF"><%= image_tag 'Vote-Button.png' , :style=> "height: 20px"  %></a>
+																</p>
+
+															</div></td>
+
+															<td>
+															<div>
+																<div>
+																	<p class ="NumVotos"; style="padding-left:15px;padding-top:10px">34</p>
+																	
+																</div>
+																<div>
+																<p class="VotesText"; style="padding-left:10px">VOTES</p>
+																</div>
+
+															</div></td>
+														</tr>
+													</table>
+
+													<p>
+														<a href="vote" style="width: 5px;padding-left:80px;background-color: #FFFFFF"><%= image_tag 'Vote-Button-English.png' , :style=> "height: 20px"  %></a>
 													</p>
 												</div></td>
 											</tr>
@@ -195,33 +364,150 @@
 					
 					<li>
 						
-							<%= image_tag 'Headshot-Sample.jpg', :alt => "4.jpg", :id => "4.jpg" %>
-						<div class="textName-recipe">Name</p>
-						<div class="textBlog-recipe">Blog</p>
+							<%= image_tag 'Headshot-Sample.jpg', :alt => "3.jpg" , :id=>"BloggerImage-recipe", :hspace=>10 %>
 						
-						<%= image_tag 'Recipe-Icon.png' , :style=> "float:left" %>
-							<div class="textRecipe-recipe">Recipe</p>
+						<p class="PreparedText">Prepared by:</p>
+						
+						<p class="BloggerNameText">Name</p>
+						
+						
+						<%= image_tag 'Laura-Muller_Recipe-Image.jpg', :alt => "3.jpg", :id => "recipeImage" %>
+						
+						<p class="NameRecipyText">Name Recipe</p>
+						
+						<p class="IngredientsText">Ingredients</p>
+						
+						<p class="IntroducedByBlogerText">aaaaaaaa  vvvv</br>vvv</br>vvv vvv</br>vvvvvv</br> vvvvvvvvvvvv vvv</br>vvvvvvvvvvv vvvvv</br>vvv vvvvvvv vvvv</p>
 							
-						<div class="textDescription-recipe">Decription</p>
-	<p><a href="vote" style="width: 5px;padding-left: 70px;background-color:#FFFFFF"><%= image_tag 'Vote.png' , :style=> "height:" %></a></p>
+						<p class="IngredientsText">Directions</p><!--#Share has the same style as "Ingredients"-->
 						
-				<div id="line-home"> </div>
+						<div>
+						
+						<p class="IntroTextDescription">bueno vamos a ve que pasaaaa aaaaaaa aaaaaa aaaa aaaa aaaaaa aaaa avamos a ve que pasaaaaaaaaaa aaaaaaaaa aaaaaaaa aaaaaaaa avamos a ve que pasaaa aaaaaaaa aaaaaa aaaaaaa aaaaaa aaaaaa</p>
+								  
+						</div>
+						
+						
+						<div>
+										<table >
+											<tr>
+												<td>
+												<div>
+													<p class= "SharedText">Share</p> <!--Share has the same style as "Prepared by"-->
+													<a href="http://twitter.com/home?status=Cook,Blog and Win with Gortons - www.cookblogandwin.gortons.com"  style="padding-left:20px;background-color: #FFFFFF"><%= image_tag 'Twitter.png' , :style=> "float:left" %></a>
+													<a href="http://www.facebook.com/sharer.php?u=www.cookblogandwin.gortons.com&t=Cook,Blog and Win with Gortons"   style="background-color: #FFFFFF";><%= image_tag 'Facebook.jpg' , :style=> "" %></a>
+												</div></td>
+												<td>
+												<div>
+
+													<table >
+														<tr>
+															<td>
+															<div>
+																<p>
+																	<a href="voteButton" style="width: 5px;padding-left:90px;background-color: #FFFFFF"><%= image_tag 'Vote-Button.png' , :style=> "height: 20px"  %></a>
+																</p>
+
+															</div></td>
+
+															<td>
+															<div>
+																<div>
+																	<p class ="NumVotos"; style="padding-left:15px;padding-top:10px">34</p>
+																	
+																</div>
+																<div>
+																<p class="VotesText"; style="padding-left:10px">VOTES</p>
+																</div>
+
+															</div></td>
+														</tr>
+													</table>
+
+													<p>
+														<a href="vote" style="width: 5px;padding-left:80px;background-color: #FFFFFF"><%= image_tag 'Vote-Button-English.png' , :style=> "height: 20px"  %></a>
+													</p>
+												</div></td>
+											</tr>
+										</table>
+									</div>
+
+						<div id="line-home"> </div>	
 					</li>
 					
 					
 					
 					<li>
 						
-						<%= image_tag 'Headshot-Sample.jpg', :alt => "5.jpg", :id => "5.jpg" %>
-						<p class="textName-recipe">Name</p>
-						<p class="textBlog-recipe">Blog</p>
+						<%= image_tag 'Headshot-Sample.jpg', :alt => "3.jpg" , :id=>"BloggerImage-recipe", :hspace=>10 %>
+						
+						<p class="PreparedText">Prepared by:</p>
+						
+						<p class="BloggerNameText">Name</p>
 						
 						
-						<p class="textRecipe-recipe">Recipe</p>
-						<p class="textDescription-recipe">Decription</p>
-<p><a href="vote" style="width: 5px;padding-left: 70px;background-color: #FFFFFF"><%= image_tag 'Vote.png' , :style=> "height:" %></a></p>						
+						<%= image_tag 'Laura-Muller_Recipe-Image.jpg', :alt => "3.jpg", :id => "recipeImage" %>
 						
-						<div id="line-home"> </div>
+						<p class="NameRecipyText">Name Recipe</p>
+						
+						<p class="IngredientsText">Ingredients</p>
+						
+						<p class="IntroducedByBlogerText">aaaaaaaa  vvvv</br>vvv</br>vvv vvv</br>vvvvvv</br> vvvvvvvvvvvv vvv</br>vvvvvvvvvvv vvvvv</br>vvv vvvvvvv vvvv</p>
+							
+						<p class="IngredientsText">Directions</p><!--#Share has the same style as "Ingredients"-->
+						
+						<div>
+						
+						<p class="IntroTextDescription">bueno vamos a ve que pasaaaa aaaaaaa aaaaaa aaaa aaaa aaaaaa aaaa avamos a ve que pasaaaaaaaaaa aaaaaaaaa aaaaaaaa aaaaaaaa avamos a ve que pasaaa aaaaaaaa aaaaaa aaaaaaa aaaaaa aaaaaa</p>
+								  
+						</div>
+						
+						
+						<div>
+										<table >
+											<tr>
+												<td>
+												<div>
+													<p class= "SharedText">Share</p> <!--Share has the same style as "Prepared by"-->
+													<a href="http://twitter.com/home?status=Cook,Blog and Win with Gortons - www.cookblogandwin.gortons.com"  style="padding-left:20px;background-color: #FFFFFF"><%= image_tag 'Twitter.png' , :style=> "float:left" %></a>
+													<a href="http://www.facebook.com/sharer.php?u=www.cookblogandwin.gortons.com&t=Cook,Blog and Win with Gortons"   style="background-color: #FFFFFF";><%= image_tag 'Facebook.jpg' , :style=> "" %></a>
+												</div></td>
+												<td>
+												<div>
+
+													<table >
+														<tr>
+															<td>
+															<div>
+																<p>
+																	<a href="voteButton" style="width: 5px;padding-left:90px;background-color: #FFFFFF"><%= image_tag 'Vote-Button.png' , :style=> "height: 20px"  %></a>
+																</p>
+
+															</div></td>
+
+															<td>
+															<div>
+																<div>
+																	<p class ="NumVotos"; style="padding-left:15px;padding-top:10px">34</p>
+																	
+																</div>
+																<div>
+																<p class="VotesText"; style="padding-left:10px">VOTES</p>
+																</div>
+
+															</div></td>
+														</tr>
+													</table>
+
+													<p>
+														<a href="vote" style="width: 5px;padding-left:80px;background-color: #FFFFFF"><%= image_tag 'Vote-Button-English.png' , :style=> "height: 20px"  %></a>
+													</p>
+												</div></td>
+											</tr>
+										</table>
+									</div>
+
+						<div id="line-home"> </div>	
 					</li>
 				
 				</ul>

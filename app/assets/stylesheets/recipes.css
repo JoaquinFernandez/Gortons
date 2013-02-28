@@ -35,13 +35,13 @@ background: radial-gradient(ellipse at center,  #d1cb81 1%,#f6f195 12%,#f6f195 7
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d1cb81', endColorstr='#b2ad6c',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 height: 500px;
 }
-}
+
 #body-recipes-carousel{
   width:auto;
   padding:5px
-f
+
 }
-}
+
 
 #wrapper-logo-recipe{
       position:relative;
@@ -64,14 +64,22 @@ f
 }
 
 
-#image-recipe{
+#BloggerImage-recipe{
 	
 	float:left;
-	width:50px;	
+	width:50px;
+	margin-top:20px;
+	margin-left: 20px;
+	
 	
 }
-
-
+#recipeImage{
+	
+	float:center;
+	width:180px;
+	margin-left: 20px
+	
+}
 
 
 
@@ -87,10 +95,10 @@ f
  
 
 background-color:#fff;
-  height: 450px;
+  height: 600px;
 }
   
-}
+
 
 div.jMyCarousel{
  
@@ -100,37 +108,121 @@ div.jMyCarousel{
 
 }
 
+
 .PreparedText{
 	font-family: "Book";
 	margin-left: 20px;
+	margin-bottom: 1px;
 	font-size:8px;
+	color:rgb(0,110,182);
 }
+
+.SharedText{
+	font-family: "Book";
+	margin-left: 20px;
+	margin-bottom: 1px;
+	margin-top: -1px;
+	font-size:8px;
+	color:rgb(0,110,182);
+}
+
 
 .BloggerNameText{
 	font-family: "Heavy";
 	margin-left: 20px;
+	margin-top: 2px;
 	font-size:10px;
+	color:rgb(0,110,182);
 }
 
 .NameRecipyText{
 	font-family: "Heavy";
 	margin-left: 20px;
 	font-size:12px;
+	color:rgb(0,110,182);
 }
 
-.PreparedText{
+.IngredientsText{
+	font-family: "MediumItalic";
+	margin-left: 20px;
+	margin-bottom:-15px;
+	margin-top:-7px;
+	font-size:10px;
+	color:rgb(0,110,182);
+}
+
+.IntroTextDescription{
 	font-family: "Book";
 	margin-left: 20px;
-	font-size:8px;
+	font-size:9px;
+	line-height: 90%;
+	color:rgb(0,110,182);
 }
+
+.IntroducedByBlogerText{
+	font-family: "Book";
+	margin-left: 20px;
+	font-size:9px;
+	line-height: 110%;
+	color:rgb(0,110,182);
+}
+
+.VotesText{
+	font-family: "Heavy";
+	margin-top: 1px;
+	font-size:8px;
+	color:rgb(0,110,182);
+}
+
+.NumVotos{
+	font-family: "HeavyItalic";
+	margin-bottom: -5px;
+	margin-top: -5px;
+	font-size:17px;
+	color:rgb(0,110,182);
+	
+}
+
+
+
+
+@font-face{
+   font-family: "Book";
+   font-style: normal;
+   font-weight: normal;
+   src: url(ITCFranklinGothicStd-Book.otf);
+  }
+   
+@font-face{
+   font-family: "Heavy";
+   font-style: normal;
+   font-weight: normal;
+   src: url(ITCFranklinGothicStd-Hvy.otf);
+  }
+@font-face{
+   font-family: "MediumItalic";
+   font-style: normal;
+   font-weight: normal;
+   src: url(ITCFranklinGothicStd-MedIt.otf);
+}
+@font-face{
+   font-family: "HeavyItalic";
+   font-style: normal;
+   font-weight: normal;
+   src: url(ITCFranklinGothicStd-HvyIt.otf);
+   
+ }
 
 .textName-recipe{
   text-align: center;
   font-family: ITCFranklinGothicStd-Hvy;
   margin-top:10px;
   font-size:11px;
+  color:rgb(0,110,182);
  
 }
+
+
 
 .textBloggerName-recipe{
   text-align: center;
@@ -166,34 +258,6 @@ div.jMyCarousel{
 margin-left: 20px
 font-family: "Demilt";
 }
-
-.NetworksShare{
-font-size: 50 px;
-text-align: left;
-}
-
-@font-face{
-   font-family: "Book";
-   font-style: normal;
-   font-weight: normal;
-   src: ../../../public/Fonts/ITCFranklinGothicStd/ITCFranklinGothicStd-Book.otf;
-   
-@font-face{
-   font-family: "Heavy";
-   font-style: normal;
-   font-weight: normal;
-   src: ../../../public/Fonts/ITCFranklinGothicStd/ITCFranklinGothicStd-Hvy.otf;
-   
-@font-face{
-   font-family: "MediumItalic";
-   font-style: normal;
-   font-weight: normal;
-   src: ../../../public/Fonts/ITCFranklinGothicStd/ITCFranklinGothicStd-MedIt.otf;
-@font-face{
-   font-family: "HeavyItalic";
-   font-style: normal;
-   font-weight: normal;
-   src: ../../../public/Fonts/ITCFranklinGothicStd/ITCFranklinGothicStd-HvyIt.otf;
 
 
 
