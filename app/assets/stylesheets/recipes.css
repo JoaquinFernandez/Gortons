@@ -100,7 +100,29 @@ div.jMyCarousel{
 
 }
 
+.PreparedText{
+	font-family: "Book";
+	margin-left: 20px;
+	font-size:8px;
+}
 
+.BloggerNameText{
+	font-family: "Heavy";
+	margin-left: 20px;
+	font-size:10px;
+}
+
+.NameRecipyText{
+	font-family: "Heavy";
+	margin-left: 20px;
+	font-size:12px;
+}
+
+.PreparedText{
+	font-family: "Book";
+	margin-left: 20px;
+	font-size:8px;
+}
 
 .textName-recipe{
   text-align: center;
@@ -109,9 +131,6 @@ div.jMyCarousel{
   font-size:11px;
  
 }
-
-
-
 
 .textBloggerName-recipe{
   text-align: center;
@@ -131,16 +150,51 @@ div.jMyCarousel{
   
 }
 
+.margin{
+	font-family: "Demilt";
+	margin-left: 20px
+}
+
 .textDescription-recipe{
-    text-align: center;
+    text-align: right;
   font-family: ITC FranklinGothic Std;
   
 }
 
 .ingredientsRecipes{
 	
-text-align:center;
+margin-left: 20px
+font-family: "Demilt";
 }
+
+.NetworksShare{
+font-size: 50 px;
+text-align: left;
+}
+
+@font-face{
+   font-family: "Book";
+   font-style: normal;
+   font-weight: normal;
+   src: ../../../public/Fonts/ITCFranklinGothicStd/ITCFranklinGothicStd-Book.otf;
+   
+@font-face{
+   font-family: "Heavy";
+   font-style: normal;
+   font-weight: normal;
+   src: ../../../public/Fonts/ITCFranklinGothicStd/ITCFranklinGothicStd-Hvy.otf;
+   
+@font-face{
+   font-family: "MediumItalic";
+   font-style: normal;
+   font-weight: normal;
+   src: ../../../public/Fonts/ITCFranklinGothicStd/ITCFranklinGothicStd-MedIt.otf;
+@font-face{
+   font-family: "HeavyItalic";
+   font-style: normal;
+   font-weight: normal;
+   src: ../../../public/Fonts/ITCFranklinGothicStd/ITCFranklinGothicStd-HvyIt.otf;
+
 
 
 
