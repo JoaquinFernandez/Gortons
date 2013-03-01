@@ -66,25 +66,30 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f6f8', end
 
 .textName{
   text-align: center;
-  font-family: ITCFranklinGothicStd-Hvy;
-  
+  font-family: "Heavy";
   font-size:11px;
+  
+
  
 }
 
 .textRecipe{
-    text-align: center;
-  font-family: ITCFranklinGothicStd-Book;
+    
+  font-family: "MediumItalic";
+margin-left:30px;
+    font-size:8px;
 }
 .textBlog{
    text-align: center;
-  font-family: ITC FranklinGothic Std;
+  font-family: "MediumItalic";
+    font-size:11px;
   
 }
 
-.textDescription{
+.textBios{
     text-align: center;
-  font-family: ITC FranklinGothic Std;
+  font-family: "Book";
+  font-size:7px;
   
 }
 

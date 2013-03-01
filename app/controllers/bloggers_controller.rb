@@ -24,10 +24,9 @@ class BloggersController < ApplicationController
   # GET /bloggers/1.json
   def show
     @blogger = Blogger.find(params[:id])
-
     respond_to do |format|
-      format.html # show.html.erb
-      format.json { render json: @blogger }
+      format.html # vote.html.erb
+      format.json { render json: @blogger}
     end
   end
 
