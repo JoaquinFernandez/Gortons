@@ -15,4 +15,13 @@ class VotersController < ApplicationController
     end
     
   end
+  def create
+    voter = Voter.find_by_email(params[:email])
+    if voter
+      render 'popupwindow'
+    else 
+      render 'create'
+    end
+    
+  end
 end
