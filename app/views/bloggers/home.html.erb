@@ -57,7 +57,7 @@
 
 				<ul id="carousel-ul">
 
-					<%= @bloggers.shuffle.each do |blogger| %>
+					
 					<%= @bloggers.shuffle.each do |blogger| %>
 
 					<li>
@@ -73,15 +73,15 @@
 						<p class="textRecipe">
 							<%= blogger.recipeName %>
 						</p>
-						<p class="textDescription">
+						<p class="textBios">
 							<%= blogger.bios %>
 						</p>
 						<p>
-							<a href="vote" style="width: 5px;padding-left: 70px;background-color:#FFFFFF"><%= image_tag 'Vote.png' , :style=> "height:" %></a>
+							<% link_to "Show",:controller=> 'blogger', :action=>'show', :blogger=> blogger.name%>
 						</p>
 						<div id="line-home"></div>
 					</li>
-					<% end %>
+					
 					<% end %>
 
 

@@ -34,7 +34,7 @@
 					<p>
 						Please submit your email to cast your vote
 					</p>
-					<%= form_tag("/search", :method => "get") do %>
+					<%= form_tag("/submitvote", :method => "get") do %>
 					<%= email_field(:user, :address) %>
 					<% end %>
 
