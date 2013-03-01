@@ -61,7 +61,7 @@
 					<%= @bloggers.shuffle.each do |blogger| %>
 
 					<li>
-						<%= image_tag blogger.image, :alt => "Headshot-Sample.jpg", :id => "image" %>
+						<%= image_tag blogger.bloggerImageBig, :alt => "Headshot-Sample.jpg", :id => "image" %>
 						<p class="textName">
 							<%= blogger.name %>
 						</p>
@@ -71,7 +71,7 @@
 
 						<%= image_tag 'Recipe-Icon.png' , :style=> "float:left" %>
 						<p class="textRecipe">
-							<%= blogger.recipe %>
+							<%= blogger.recipeName %>
 						</p>
 						<p class="textBios">
 							<%= blogger.bios %>

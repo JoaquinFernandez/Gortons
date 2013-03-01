@@ -1,4 +1,16 @@
 class BloggersController < ApplicationController
+  
+  # GET /vote
+  # GET /vote.json
+  def chooserecipe
+    @bloggers = Blogger.all
+    
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render json: @recipes }
+    end
+  end
+  
   # GET /bloggers
   # GET /bloggers.json
   def home

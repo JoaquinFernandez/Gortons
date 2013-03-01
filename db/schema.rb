@@ -11,28 +11,29 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130301153837) do
+ActiveRecord::Schema.define(:version => 20130301172401) do
 
   create_table "bloggers", :force => true do |t|
-    t.string   "blogName"
     t.string   "name"
-    t.string   "recipe"
+    t.string   "blogName"
+    t.string   "bloggerImageBig"
     t.string   "bios"
-    t.string   "image"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.string   "bloggerImageSmall"
+    t.string   "dishImage"
+    t.string   "recipeName"
+    t.string   "ingredients"
+    t.string   "description"
+    t.integer  "votes"
+    t.datetime "created_at",        :null => false
+    t.datetime "updated_at",        :null => false
   end
 
-  create_table "recipes", :force => true do |t|
-    t.string   "description"
-    t.string   "ingredients"
-    t.string   "dishName"
-    t.integer  "user_id"
-    t.integer  "votes"
-    t.string   "bloggerImage"
-    t.string   "dishImage"
-    t.datetime "created_at",   :null => false
-    t.datetime "updated_at",   :null => false
+  create_table "voters", :force => true do |t|
+    t.string   "email"
+    t.boolean  "votedEver"
+    t.boolean  "votedToday"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
 end
