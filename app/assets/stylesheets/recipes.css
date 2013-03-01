@@ -1,6 +1,6 @@
 #header-recipes-gradient{
       width: inherit;
-      height:40px;
+      height:60px;
       background: #d1cb81; /* Old browsers */
 background: -moz-linear-gradient(top,  #d1cb81 1%, #f6f195 12%, #f6f195 71%, #f6f195 74%, #b2ad6c 100%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#d1cb81), color-stop(12%,#f6f195), color-stop(71%,#f6f195), color-stop(74%,#f6f195), color-stop(100%,#b2ad6c)); /* Chrome,Safari4+ */
@@ -45,12 +45,14 @@ height: 500px;
 
 #wrapper-logo-recipe{
       position:relative;
+    
 }
 
 #image-logo-recipe{
       position:absolute;
-      top:90px;
-      left:400px;
+      top:9px;
+      left:90px;
+        
 }
 #page-wrapper-recipes{
   width:960px;
