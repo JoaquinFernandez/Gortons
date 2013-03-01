@@ -34,13 +34,8 @@
 					<p>
 						Please submit your email to cast your vote
 					</p>
-					<%= @voters.each do |voter| %>
 					<%= form_tag("/search", :method => "get") do %>
 					<%= email_field(:user, :address) %>
-					<div class="actions">
-						<%= voter.submit %>
-					</div>
-					<% end %>
 					<% end %>
 
 				</div>
