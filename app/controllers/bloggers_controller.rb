@@ -53,6 +53,17 @@ class BloggersController < ApplicationController
       format.json { render json: @blogger }
     end
   end
+  
+   # GET /bloggers/new
+  # GET /bloggers/new.json
+  def show
+    @blogger = Blogger.new
+
+    respond_to do |format|
+      format.html # new.html.erb
+      format.json { render json: @blogger }
+    end
+  end
 
   # GET /bloggers/1/edit
   def edit

@@ -2,19 +2,16 @@
 
 <p>
   <b>Name:</b>
-  <%= @user.name %>
+  <%= @voter.votedToday %>
 </p>
 
 <p>
   <b>Email:</b>
-  <%= @user.email %>
+  <%= @voter.email %>
 </p>
 
 <p>
-  <b>Comments:</b>
-  <%= @user.comments %>
-</p>
 
 
-<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Edit', edit_user_path(@voter) %> |
 <%= link_to 'Back', users_path %>

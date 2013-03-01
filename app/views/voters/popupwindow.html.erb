@@ -19,14 +19,14 @@
 				<div id="header-popup">
 
 					<div style="float: left">
-						<%= image_tag 'Laura-Muller_Recipe-Image-popup.png'%>
+						<%= image_tag  @blogger.dishImage %>
 					</div>
 					<div>
 						<p>
-							Name of the Blogger
+							<%= @blogger.name %>
 						</p>
 						<p style="">
-							Name of the Recipe
+							<%= @blogger.recipeName %>
 						</p>
 					</div>
 				</div>
@@ -34,16 +34,12 @@
 					<p>
 						Please submit your email to cast your vote
 					</p>
-
-					<form action="congratulations">
-						* Email:
-						<input type="text" name="email" >
-						<br><<%= @voters.each do |voter| %>
-						
+					<%= form_tag("/search", :method => "get") do %>
+					<%= email_field(:user, :address) %>
+					<div class="actions">
+						<%= f.submit %>
+					</div>
 					<% end %>
-					<%= @blogger.recipeName %>
-						<input type="submit" value="Submit" id="button-email">
-					</form>
 
 				</div>
 

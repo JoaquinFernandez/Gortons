@@ -20,8 +20,6 @@ Sadsad::Application.routes.draw do
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):
     resources :bloggers
-    resources :recipes
-    resources :users
     resources :voters
     
     root :to => 'bloggers#home'

@@ -7,4 +7,12 @@ class VotersController < ApplicationController
       format.json { render json: @voter }
     end
   end
+  
+  def sendemail
+    @blogger = Blogger.find(params[:blogger])
+    blogger do
+      blogger.votes += 1
+    end
+    
+  end
 end
