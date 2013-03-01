@@ -52,45 +52,42 @@
 			<%= image_tag 'Header.jpg', :style => "width: 960px; height: 270px;padding-bottom:-200px;float:left"%>
 
 			<!-- Carousel Structure -->
-		
-					
+
 			<div class="jMyCarousel">
-	
+
 				<ul id="carousel-ul">
-				
-			<%= @bloggers.each do |blogger| %>
+
+					<%= @bloggers.shuffle.each do |blogger| %>
+					<%= @bloggers.shuffle.each do |blogger| %>
 
 					<li>
-						<%= image_tag 'blogger_images/Brenda.jpg', :alt => "Headshot-Sample.jpg", :id => "1jpg" %>
+						<%= image_tag blogger.image, :alt => "Headshot-Sample.jpg", :id => "image" %>
 						<p class="textName">
-						<%= blogger.name %>
+							<%= blogger.name %>
 						</p>
 						<p class="textBlog">
-						<%= blogger.blogName %>
+							<%= blogger.blogName %>
 						</p>
 
 						<%= image_tag 'Recipe-Icon.png' , :style=> "float:left" %>
 						<p class="textRecipe">
-						<%= blogger.recipe %>
-							
-    
+							<%= blogger.recipe %>
 						</p>
 						<p class="textDescription">
-						<%= blogger.bios %>
+							<%= blogger.bios %>
 						</p>
 						<p>
 							<a href="vote" style="width: 5px;padding-left: 70px;background-color:#FFFFFF"><%= image_tag 'Vote.png' , :style=> "height:" %></a>
 						</p>
 						<div id="line-home"></div>
 					</li>
-				
-<% end %>	
+					<% end %>
+					<% end %>
 
 
 				</ul>
-					
+
 			</div>
-			
 
 			<div id="backgroundBottomHome">
 				<a href="vote" style="background-color: rgb(246,241,149);width:600px"><%= image_tag 'Bottom-Image.jpg', :style => "width: 900px; height: 200px;margin-left:30px"%></a>
