@@ -1,20 +1,20 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+  <b>Name:</b>
+  <%= @user.name %>
+</p>
+
+<p>
   <b>Email:</b>
-  <%= @voter.email %>
+  <%= @user.email %>
 </p>
 
 <p>
-  <b>Votedtoday:</b>
-  <%= @voter.votedToday %>
-</p>
-
-<p>
-  <b>Votedever:</b>
-  <%= @voter.votedEver %>
+  <b>Comments:</b>
+  <%= @user.comments %>
 </p>
 
 
-<%= link_to 'Edit', edit_voter_path(@voter) %> |
-<%= link_to 'Back', voters_path %>
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>

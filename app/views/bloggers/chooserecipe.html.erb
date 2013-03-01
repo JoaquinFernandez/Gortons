@@ -1,0 +1,177 @@
+<!-- Carousel Structure -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<%= stylesheet_link_tag 'recipes' %>
+		<%= stylesheet_link_tag 'JMyCarousel-recipes' %>
+		<%= javascript_include_tag "jMyCarousel" %>
+		<!-- Optional -->
+		<%= javascript_include_tag "jquery.mousewheel" %>
+		<script type="text/javascript">
+			$(function() {
+				$(".jMyCarousel").jMyCarousel({
+					visible : '100%'
+				});
+			});
+			function popUp(URL) {
+				eval("page" + "=window.open(URL, '" + "', 'width=467,height=289,top=400,left=700');");
+			}
+		</script>
+	</head>
+	<body >
+		<div id="page-wrapper-recipes">
+			<nav id="header-nav" >
+				<ul id="header-nav-list">
+
+					<li>
+						<a id="first" href="http://gortonsenespanol.com/productos"> GORTON'S PRODUCTS</a>
+
+					</li>
+
+					<li>
+						<a  href="http://gortonsenespanol.com/"> GORTONSENESPANOL.COM</a>
+
+					</li>
+
+				</ul>
+			</nav>
+			<div id="wrapper-logo-recipe">
+				<div id="image-logo-recipe">
+					<%= image_tag 'Logo.png', :alt => "Logo", :id => "vote_logo" %>
+				</div>
+			</div>
+
+			<div id="header-recipes-gradient"></div>
+			<div id="body-recipes-wrapper"style="height: 800px">
+				<div id="body-recipes-gradient"style="height: 650px">
+					<div id="body-recipes-carousel">
+
+						<div class="jMyCarousel">
+
+							<ul id="carousel-ul-recipe" >
+								<%= @bloggers.each do |blogger| %>
+								<li>
+
+									<%= image_tag blogger.bloggerImageBig, :alt => "3.jpg" , :id=>"BloggerImage-recipe", :hspace=>10 %>
+
+									<p class="PreparedText">
+										Prepared by:
+									</p>
+
+									<p class="BloggerNameText">
+										<%= blogger.name %>
+									</p>
+
+									<%= image_tag 'Laura-Muller_Recipe-Image.jpg', :alt => "3.jpg", :id => "recipeImage" %>
+
+									<p class="NameRecipyText">
+										<%= blogger.recipeName %>
+									</p>
+
+									<p class="IngredientsText">
+										Ingredients
+									</p>
+
+									<p class="IntroducedByBlogerText">
+										<%= blogger.ingredients %>
+									</p>
+
+									<p class="IngredientsText">
+										Directions
+									</p><!--#Share has the same style as "Ingredients"-->
+
+									<div>
+
+										<p class="IntroTextDescription">
+										<%= blogger.description %>
+										</p>
+
+									</div>
+
+									<div>
+										<table >
+											<tr>
+												<td>
+												<div>
+													<p class= "SharedText">
+														Share
+													</p>
+													<!--Share has the same style as "Prepared by"-->
+													<a href="http://twitter.com/home?status=Cook,Blog and Win with Gortons - www.cookblogandwin.gortons.com"  style="padding-left:20px;background-color: #FFFFFF"><%= image_tag 'Twitter.png' , :style=> "float:left" %></a>
+													<a href="http://www.facebook.com/sharer.php?u=www.cookblogandwin.gortons.com&t=Cook,Blog and Win with Gortons"   style="background-color: #FFFFFF";><%= image_tag 'Facebook.jpg' , :style=> "" %></a>
+												</div></td>
+												<td>
+												<div>
+
+													<table >
+														<tr>
+															<td>
+															<div>
+																<p>
+
+																	<div style="width: 5px;padding-left:90px;background-color: #FFFFFF">
+																		<%= image_tag 'Vote-Button.png' , :style=> "height: 20px"  %>
+																	</div>
+																</p>
+
+															</div></td>
+
+															<td>
+															<div>
+																<div>
+																	<p class ="NumVotos"; style="padding-left:15px;padding-top:10px">
+																		<%= blogger.votes %>
+																	</p>
+
+																</div>
+																<div>
+																	<p class="VotesText"; style="padding-left:10px">
+																		VOTES
+																	</p>
+																</div>
+
+															</div></td>
+														</tr>
+													</table>
+
+													<p>
+														<%= link_to image_tag("Vote-Button-English.png" , :style=> "height: 20px"), {:controller => "voters", :action => "popupwindow", :blogger => blogger.id}%></a>
+													</p>
+												</div></td>
+											</tr>
+										</table>
+									</div>
+
+									<div id="line-home"></div>
+								</li>
+								<% end %>
+								
+
+									<div id="line-home"></div>
+
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<footer id="page-footer">
+					<nav id="footer-nav">
+						<ul id="footer-nav-list">
+							<li>
+								<a id="firstchild" href="official_rules" title="Official Rules" style="background-color: rgb(254,237,47)">Official Rules</a
+							</li>
+							<li>
+								<a href="http://gortons.com/privacy_policy.htm" title="Privacy Policy" style="background-color: rgb(254,237,47)">Privacy Policy</a
+							</li>
+
+							<li>
+								<a href="ContactUs.html" title="Contact Us" style="background-color: rgb(254,237,47)">Contact Us</a
+							</li>
+
+						</ul>
+					</nav>
+				</footer>
+			</div>
+		</div>
+	</body>
+</html>

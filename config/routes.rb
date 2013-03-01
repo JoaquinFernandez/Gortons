@@ -27,9 +27,9 @@ Sadsad::Application.routes.draw do
     root :to => 'bloggers#home'
         
     match '/official_rules', :to => 'bloggers#rules'
-    match '/vote', :to => 'recipes#chooserecipe'
-    match '/confirmation', :to => 'users#popupwindow'
-     match '/congratulations', :to => 'users#congratulations'
+    match '/vote', :to => 'bloggers#chooserecipe'
+    match '/confirmation', :to => 'voters#popupwindow'
+     match '/congratulations', :to => 'voters#congratulations'
 
   # Sample resource route with options:
   #   resources :products do
