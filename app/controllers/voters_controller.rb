@@ -1,6 +1,6 @@
 class VotersController < ApplicationController
   def popupwindow
-    @voters = Voter.all
+    @voter = Voter.new
     @blogger = Blogger.find(params[:blogger])
     respond_to do |format|
       format.html # index.html.erb

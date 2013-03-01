@@ -34,8 +34,12 @@
 					<p>
 						Please submit your email to cast your vote
 					</p>
+					<%= form_for @voter, :url => { :action => "create" }, :html => {:class => "nifty_form"} do |f| %>
+ 						 <%= email_field(:user, :address)%>
+  					<%= f.submit "Create" %>
+					<% end %>
 					<%= form_tag("/submitvote", :method => "get") do %>
-					<%= email_field(:user, :address) %>
+					<%= email_field(:user, :address, {:controller => "voters", :action => "sendemail", :voter => voter.id}) %>
 					<% end %>
 
 				</div>

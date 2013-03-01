@@ -63,7 +63,6 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.21)
     multi_json (1.6.1)
-    mysql2 (0.3.11)
     paperclip (3.4.1)
       activemodel (>= 3.0.0)
       activerecord (>= 3.0.0)
@@ -137,7 +136,6 @@ DEPENDENCIES
   coffee-rails (= 3.2.2)
   facebox-rails
   jquery-rails (= 2.0.2)
-  mysql2
   paperclip (~> 3.4.0)
   rails (= 3.2.6)
   rake
